@@ -1,0 +1,10 @@
+# 忽略 iCloud 产生的缓存
+.DS_Store
+.Trash/
+# 忽略大文件
+*.pt
+*.pth
+*.bin
+# 忽略 LLaMA-Factory 的运行缓存
+LLaMA-Factory/cache/
+LLaMA-Factory/data/
