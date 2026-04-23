@@ -1,7 +1,6 @@
 # 忽略巨型优化器状态
 optimizer.pt
 rng_state.pth
-trainer_state.json
 
 # 忽略日志和缓存
 *.log
