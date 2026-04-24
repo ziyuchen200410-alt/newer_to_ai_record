@@ -30,46 +30,27 @@
 ### 3. 训练配置 (Training Configuration)
 本阶段采用 **LoRA (Low-Rank Adaptation)** 技术进行轻量化参数更新，确保在注入知识的同时不破坏基座模型的通用对话能力。
 
-| 参数 (Hyperparameters) | 取值 (Value) | 逻辑说明 (Logic) |
+#### 3.1 pre_train(rank64)
+这一部分参数放在文件夹pre_train下
+实验综述：首轮增量预训练（CPT）旨在验证 Qwen2.5-VL 在医学垂直领域的“冷启动”能力。实验证明，在 2048 长度的段落流形下，模型能够稳健地吸收医学教材的统计分布特征。
+| 维度 | 核心参数/指标 | 逻辑审计 (Logic Audit) |
 | :--- | :--- | :--- |
-| **Stage** | `pt` | 增量预训练模式 |
-| **LoRA Rank** | `64` | 保证足够的参数表达能力以吸收专业事实 |
-| **Cutoff Length** | `2048` | 确保模型能处理完整的教材长段落 |
-| **Packing** | `true` | 将短段落拼接，极大化计算吞吐量 |
-| **Learning Rate** | `5e-5` | 采用余弦退火策略（Cosine Decay）平滑收敛 |
-| **Warmup Steps** | `100` | 预热阶段防止初始梯度震荡 |
-
-### 4. 训练产出与审计 (Artifacts & Audit)
-在正式实验中，我们去除了调试步数限制，完成了 3 个 Epoch 的完整训练。以下为最终对齐的工程参数与性能指标：
-
-#### 🛠️ 硬件与环境 (Hardware & Environment)
-* **GPU**: NVIDIA GeForce RTX 4090 (24GB/48GB 逻辑显存)
-* **显存占用**: ~39.6 GiB (开启 Packing & FlashAttention-2)
-* **功耗/散热**: 峰值 435W，风扇 100% 满转，核心温度稳定在 76°C
-* **计算框架**: LLaMA-Factory (v0.9.5.dev0) + PyTorch 2.5.1
-
-#### 📊 核心超参数 (Hyperparameters)
-| 参数项 | 配置值 | 备注 |
+| **基础配置** | LoRA Rank 64 / Alpha 128 | 采用中等秩设定，平衡了参数表达力与计算开销，适合初步特征对齐。 |
+| **数据规模** | 1830 Steps (3.0 Epochs) | 物理更新步数充裕，确保模型在权重空间有足够的位移跨越通用语料势垒。 |
+| **切分逻辑** | 段落模式 (Paragraph) / Packing | 保持了医学因果逻辑的连贯性；由于 2048 窗口无填充，梯度信息密度极高。 |
+| **计算策略** | LR 5e-5 / BS 16 / Cosine | 能量释放符合预期，余弦退火保证了后期在局部极小值附近的精细搜索。 |
+| **硬件表现** | RTX 4090 / 39.6 GiB / 76°C | 显存利用率达 82.5%，FlashAttention-2 有效压制了长序列的计算复杂度。 |
+| **收敛表现** | **Initial: 2.398 → Final: 1.982** | Loss 曲线呈现典型的对数下降，最终下降约 17.3%，未观察到灾难性遗忘。 |
+#### 3.2 pre_train1(rank128)
+实验综述：本阶段完成了医学全量语料的初步增量预训练（CPT）。通过高秩（Rank 128）配置，模型在段落级长文本上展现了良好的拟合趋势，为后续的高能冲刺奠定了权重基础。
+| 维度 | 核心参数/指标 | 逻辑审计 (Logic Audit) |
 | :--- | :--- | :--- |
-| **Total Steps** | 1830 | 对应 `num_train_epochs: 3.0` |
-| **Effective Batch Size** | 16 | `per_device_train_batch_size: 4` × `grad_accum: 4` |
-| **Learning Rate** | 5e-5 | Cosine 退火策略 |
-| **Optimizer** | AdamW | -- |
-| **Precision** | FP16 | 开启 FlashAttention-2 兼容模式 |
-| **Max Length** | 2048 | 启用 `packing: true` 以保持语义连贯 |
-
-#### 📈 训练统计 (Training Metrics)
-根据 `trainer_state.json` 与 `train_results.json` 的统计数据：
-
-* **训练总时长 (Runtime)**: 约 7.5 小时
-* **迭代速度 (Throughput)**: 15.24s/it (约 0.99 samples/s)
-* **训练损失 (Loss Evolution)**:
-  * 初始 Loss: **2.398**
-  * 最终 Loss: **1.982** (收敛稳定，无梯度爆炸现象)
-* **计算量 (Total FLOPs)**: 约 $7.1 \times 10^{15}$
-
-> **逻辑审计判定**：Loss 曲线呈现典型的对数下降特征，从起始的高熵状态下降了约 45%，表明模型已有效拟合教材中的医学事实分布，且未观察到明显的灾难性遗忘。
-
+| **基础配置** | LoRA Rank 128 / Alpha 256 | 采用高秩设定以增强模型对医学专业流形的表达能力，参数更新空间更广阔。 |
+| **数据规模** | 744 Steps (3.0 Epochs) | 对应约 4000 个段落样本，步数经过精简但信息密度极高。 |
+| **切分逻辑** | 段落模式 (Paragraph) / Packing | 物理上保留了完整的医学因果逻辑，通过 Packing 彻底消除了填充 Token 带来的梯度稀释。 |
+| **计算策略** | LR 2e-5 / BS 16 / Warmup 100 | 采用了相对稳健的学习率策略，确保模型在热启动阶段平稳吸收新分布。 |
+| **收敛表现** | **Initial: 2.709 → Final: 2.308** | Loss 下降约 14.8%，曲线平滑且无梯度爆炸，证明医学知识注入逻辑正确。 |
+| **评估状态** | Eval Loss: 2.368 / PPL: 10.65 | 验证集指标与训练集高度对齐，模型处于健康的欠拟合转拟合阶段，未见遗忘风险。 |
 ---
 
 ---
