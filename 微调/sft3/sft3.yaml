@@ -1,0 +1,35 @@
+### 1. 模型路径审计
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/medical_qwen_sft2_merged
+
+### 2. 运行阶段
+stage: sft
+do_train: true
+finetuning_type: lora      # 切换为 LoRA，这是进入 40GB 门槛的唯一路径
+
+### 3. LoRA 高阶配置 (模拟全参数效果)
+lora_rank: 128             # 高秩，确保知识能够“泵入”权重
+lora_alpha: 256            # 通常设为 Rank 的 2 倍
+lora_dropout: 0.05
+lora_target: all           # 覆盖所有 Linear 层（包括 q, k, v, o, up, down, gate）
+
+### 4. 显存审计与压缩 (针对 40GB 显存优化)
+cutoff_len: 512            # 简答题不需要 1024，压缩长度可腾出大量显存
+optim: paged_adamw_8bit    # 使用分页 8-bit 优化器
+gradient_checkpointing: true
+per_device_train_batch_size: 2 # 显存降下来了，batch_size 可以微调到 2
+gradient_accumulation_steps: 8 # 保持有效 Batch Size = 16
+flash_attn: fa2            # 必须开启，大幅减少计算图显存
+
+### 5. 训练参数 (知识召回模式)
+dataset: cmb_pure_recall_25k
+template: qwen
+learning_rate: 1.0e-4      # LoRA 的学习率通常比 Full SFT 稍高
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+
+### 6. 存储与日志
+save_strategy: "no"
+output_dir: saves/medical_qwen/sft3_lora_128
+overwrite_output_dir: true

@@ -1,0 +1,168 @@
+--- [Unknown Case 1] ---
+PROMPT_TAIL: e Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-该产妇是否可以试产，若可试产其时间是
+A: 不可试产
+B: 可试产1小时
+C: 可试产1.5小时
+D: 可试产2小时
+E: 可试产4小时<|im_end|>
+<|im_start|>assistant
+
+PREDICT: A
+LABEL: A
+
+
+--- [Unknown Case 2] ---
+PROMPT_TAIL: Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-上述检查发现有异常，应采用的治疗方案是
+A: 异常部位活检送病理
+B: 氯米芬促排卵
+C: 抗炎治疗
+D: 输卵管通液治疗
+E: 服乙烯雌酚<|im_end|>
+<|im_start|>assistant
+
+PREDICT: A
+LABEL: D
+
+
+--- [Unknown Case 3] ---
+PROMPT_TAIL:  created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-该病人治疗后应进行随访，第一年的正确做法是
+A: 每1个月一次
+B: 每2个月一次
+C: 每3个月一次
+D: 前半年每月一次
+E: 前半年每2个月一次<|im_end|>
+<|im_start|>assistant
+
+PREDICT: D
+LABEL: D
+
+
+--- [Unknown Case 4] ---
+PROMPT_TAIL: >system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-在术后48小时内，护士最主要的观察内容是
+A: 呼吸
+B: 脉搏
+C: 体温
+D: 血压
+E: 伤口愈合情况<|im_end|>
+<|im_start|>assistant
+
+PREDICT: A
+LABEL: A
+
+
+--- [Unknown Case 5] ---
+PROMPT_TAIL: <|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-烧伤深度为
+A: —度
+B: 浅二度
+C: 深二度
+D: 三度
+E: 四度<|im_end|>
+<|im_start|>assistant
+
+PREDICT: C
+LABEL: B
+
+
+--- [Unknown Case 6] ---
+PROMPT_TAIL: created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-对于该患儿双眼症状，适宜的护理措施是
+A: 佩戴防护目镜
+B: 减少用眼时间
+C: 每日做眼保健操
+D: 使用抗生素眼药水
+E: 每日用生理盐水擦洗双眼<|im_end|>
+<|im_start|>assistant
+
+PREDICT: E
+LABEL: E
+
+
+--- [Unknown Case 7] ---
+PROMPT_TAIL: l assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-该病人出血后4小时，经抢救输血等治疗后，脉搏140次/分，血压80/50mmHg，宜采取
+A: 加大输液量，加用升压药
+B: 用冰氯化钠注射液、去甲肾上腺素液灌洗胃腔
+C: 紧急作胃镜检查
+D: 快速输血，立即手术
+E: 胃内灌注凝血酶<|im_end|>
+<|im_start|>assistant
+
+PREDICT: D
+LABEL: D
+
+
+--- [Unknown Case 8] ---
+PROMPT_TAIL: >system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-如镜检有假菌丝，首选药物是
+A: 广谱抗生素
+B: 制霉菌素
+C: 甲硝唑
+D: 安宫黄体酮
+E: 乙烯雌酚<|im_end|>
+<|im_start|>assistant
+
+PREDICT: B
+LABEL: B
+
+
+--- [Unknown Case 9] ---
+PROMPT_TAIL: ted by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-为了进一步确诊其是否怀孕，下列可以提供确诊依据的检查是
+A: 听筒听胎心
+B: 胎动
+C: 放射检查胎儿脊柱轮廓
+D: B超显示胎心搏动
+E: 检查血中激素水平<|im_end|>
+<|im_start|>assistant
+
+PREDICT: D
+LABEL: D
+
+
+--- [Unknown Case 10] ---
+PROMPT_TAIL: elpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-下列有关心肺复苏中胸外按压操作者的姿势叙述不正确的是
+A: 救护者跪于病人左侧
+B: 两手掌根重叠，平行放于两乳头间的胸骨上
+C: 上半身前倾，两肩位于双手正上方
+D: 借助手臂的力量垂直用力下压
+E: 抬起时掌根不要离开胸壁<|im_end|>
+<|im_start|>assistant
+
+PREDICT: A
+LABEL: D
+
+
+--- [Unknown Case 11] ---
+PROMPT_TAIL: u are a helpful assistant.<|im_end|>
+<|im_start|>user
+(C型选择题)1-目前该患儿呈现典型痉咳状态，常突发数十声急促的咳嗽，终末长吸气伴高调鸡鸣样吼声。此时最主要的护理诊断为
+A: 潜在并发症：肺不张
+B: 低效型呼吸形态
+C: 自主呼吸受损
+D: 有窒息的危险
+E: 活动无耐力<|im_end|>
+<|im_start|>assistant
+
+PREDICT: D
+LABEL: D
+
+

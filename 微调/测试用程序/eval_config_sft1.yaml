@@ -1,0 +1,21 @@
+### model
+# 务必确认你已经成功执行了 export，且这个路径下有模型文件
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/medical_qwen_v2_final
+trust_remote_code: true
+
+### method
+stage: sft
+do_predict: true
+
+### dataset
+# 关键修复点：对于预测/评估任务，建议使用这个键名
+eval_dataset: medical_test 
+template: qwen
+cutoff_len: 2048
+# 备选修复：如果还报同样的错，请加上这一行：
+# val_size: 0.1 
+
+### output
+output_dir: saves/medical_eval_results_sft1
+overwrite_output_dir: true
+predict_with_generate: true

@@ -1,0 +1,40 @@
+### model
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/medical_qwen_v2_final
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.1
+
+### dataset
+dataset: cmb_sft_26w
+template: qwen
+cutoff_len: 1024
+max_samples: 270000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: saves/qwen_v2_sft2_final
+logging_steps: 10
+save_steps: 2000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-6    # 既然是第二轮，建议学习率设得更小，进行精细调整
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true               # 必须使用 bf16，显存利用率和数值稳定性最高
+flash_attn: fa2          # 必须开启，否则 9 小时绝对跑不完 26 万条
+
+### precision
+ddp_timeout: 180000000

@@ -1,0 +1,26 @@
+### 1. 模型逻辑审计 (锁定 4月22日 原始路径)
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/qwen//Qwen2.5-VL-7B-Instruct
+stage: sft
+do_train: false
+do_predict: true
+finetuning_type: full
+
+### 2. 数据集配置 (调用已有数据库)
+eval_dataset: cmb_eval     
+template: qwen             # 必须保持 template 一致性
+cutoff_len: 1024
+
+### 3. 安全与隔离
+report_to: none            # 物理断开 W&B
+export_device: cuda
+
+### 4. 推理参数 (贪婪解码模式)
+per_device_eval_batch_size: 16
+predict_with_generate: true
+max_new_tokens: 64         
+do_sample: false           # 强制关闭采样，消除随机性波动
+top_p: 1.0
+
+### 5. 输出路径 (独立存档)
+output_dir: /data1/student/czy/LLaMA-Factory/saves/qwen_base_eval_tonight
+overwrite_output_dir: true

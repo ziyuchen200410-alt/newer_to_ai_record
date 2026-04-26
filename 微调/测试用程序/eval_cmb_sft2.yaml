@@ -1,0 +1,29 @@
+### 1. 模型路径审计
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/medical_qwen_sft2_merged
+adapter_name_or_path: 
+
+### 2. 关键修正：修改 Stage 并指定执行动作
+stage: sft               # 必须设为 sft 才能绕过参数检查
+do_train: false          # 严禁训练，确保权重不泄漏
+do_predict: true         # 开启预测模式
+predict_with_generate: true
+
+### 3. 数据集与模板配置
+eval_dataset: cmb_eval
+template: qwen
+cutoff_len: 2048
+max_samples: 11200
+
+
+### 4. 生成策略审计 (确保确定性结果)
+do_sample: false
+temperature: 0
+top_p: 1.0
+max_new_tokens: 10
+
+### 5. 计算资源分配
+per_device_eval_batch_size: 16
+
+### 6. 输出结果审计
+output_dir: saves/medical_qwen/eval_results
+overwrite_output_dir: true
