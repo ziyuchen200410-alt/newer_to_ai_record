@@ -1,0 +1,29 @@
+### model
+# 注意：这里改成了你刚刚导出的合并后路径
+model_name_or_path: ./models/medical_qwen_v1_base
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 128  # 在新基座上开启新一轮 128 秩的指令拟合
+lora_alpha: 256
+lora_dropout: 0.05
+
+### dataset
+dataset: medical_sft_train
+template: qwen
+cutoff_len: 2048
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### 其他配置维持不变...
+output_dir: saves/medical_sft1
+learning_rate: 1e-5
+num_train_epochs: 3.0
+plot_loss: true
+fp16: true
+flash_attn: fa2
+

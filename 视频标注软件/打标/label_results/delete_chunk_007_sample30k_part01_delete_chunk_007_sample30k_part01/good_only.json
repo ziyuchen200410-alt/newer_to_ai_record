@@ -1,0 +1,926 @@
+[
+  {
+    "ref_video_path": "ref/2341862164738474.mp4",
+    "src_video_path": "src/2341862164738474_the_white_perforated_pillar_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the gray metal pole with oval cutouts.",
+      "Eliminate the tall gray metal pole with irregular oval cutouts on the right side of the frame.",
+      "Cut out the cylindrical gray metal pole featuring spaced oval cutouts, standing upright near a blurred suited figure on the right.",
+      "Remove the light-gray cylindrical metal pole—marked by irregularly sized oval cutouts—standing vertically on the right edge of the scene beside a blurred person in a suit."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2126420634941767.mp4",
+    "src_video_path": "src/2126420634941767_the_green_pillow_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the olive-green pillow from the sofa.",
+      "Eliminate the square olive-green pillow resting on the left side of the gray sofa.",
+      "Cut out the wrinkled olive-green fabric pillow sitting on the left of the sofa, beside a yellow pillow and in front of a blurred bookshelf.",
+      "Remove the slightly wrinkled, square olive-green pillow positioned on the left edge of the light gray sofa—next to a partially visible yellow pillow and against a softly blurred wooden bookshelf backdrop."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2502757837720492_part0.mp4",
+    "src_video_path": "src/2502757837720492_part0_the_pink_gift_box_with_a_cream_ribbon_mask_video.mp4",
+    "text": [
+      "Take out the gift box with the pink lid.",
+      "Eliminate the pink-lidded gift box held in front of the person’s torso.",
+      "Cut out the rectangular gift box with pink lid and white base, tied with a cream ribbon, held horizontally by someone in a light blue shirt.",
+      "Delete the rectangular gift box — pink lid, white base, cream satin bow — being held horizontally at torso level by a person in a light blue shirt, centered in frame."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2137582795962174.mp4",
+    "src_video_path": "src/2137582795962174_the_green_potted_plant_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the potted plant with green leaves.",
+      "Eliminate the leafy potted plant sitting on the left side of the table.",
+      "Cut out the lush green potted plant behind the white laptop on the round table.",
+      "Remove the tall dark gray concrete-style planter with vibrant green foliage extending upward and rightward, partially hidden behind the laptop on the left side of the table under soft ambient light."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2359402361255823.mp4",
+    "src_video_path": "src/2359402361255823_the_purple_shopping_bag_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the purple shopping bag with the yellow handle.",
+      "Eliminate the glossy purple shopping bag with the yellow handle on the right side near the person’s legs.",
+      "Cut out the glossy purple paper bag with a yellow handle, positioned on the right beside the person’s legs and another blurred bag, slightly above the tiled floor.",
+      "Remove the glossy purple paper shopping bag featuring a yellow handle—it’s held by a person, resting just above the tiled floor on the right, next to their legs and a blurred bag."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2605525546174263.mp4",
+    "src_video_path": "src/2605525546174263_the_white_decorative_house_on_the_wooden_table_mask_video.mp4",
+    "text": [
+      "Take out the white house-shaped terrarium.",
+      "Eliminate the white glass terrarium sitting on the left side of the wooden surface.",
+      "Cut out the small house-shaped glass terrarium with a transparent roof, placed left of the blurred green plant on the wood surface.",
+      "Delete the white, house-shaped glass terrarium containing a tiny chair and potted plant — positioned on the left of the wooden table, in front of a light wall and beside a blurred green pot."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2355447274242769.mp4",
+    "src_video_path": "src/2355447274242769_the_silver_laptop_mask_video.mp4",
+    "text": [
+      "Take out the silver laptop with the square logo.",
+      "Eliminate the silver Microsoft Surface laptop sitting on the wooden desk.",
+      "Cut out the open silver Surface laptop angled right on the desk, in front of a blurred person wearing headphones.",
+      "Remove the silver Microsoft Surface laptop — lid showing square logo, screen turned away, body slightly angled right — positioned on the wooden desk ahead of a blurred figure in headphones and sunglasses."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2443178053889880.mp4",
+    "src_video_path": "src/2443178053889880_the_green_cucumber_slice_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the green veggie slice from the cutting board.",
+      "Eliminate the bright green triangular vegetable slice resting on the right edge of the white cutting board.",
+      "Cut out the glossy green triangular veggie slice near the person’s hand holding a knife on the white cutting board.",
+      "Delete the small, bright green, triangular cucumber or zucchini slice with a smooth surface—sitting on the right edge of the white cutting board beside a hand gripping a knife."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2603345229464039.mp4",
+    "src_video_path": "src/2603345229464039_the_silver_laptop_on_the_desk_mask_video.mp4",
+    "text": [
+      "Take out the silver laptop with the white logo.",
+      "Eliminate the silver laptop featuring a white circular logo, located on the wooden desk.",
+      "Cut out the open silver laptop with a white logo, sitting on the light wooden desk in front of a blurred person holding a red card.",
+      "Delete the silver laptop—open, with a white circular logo on the lid—resting on the light wooden desk, positioned left of a small potted plant and in front of a blurred person holding a red card."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2585270536186697_part0.mp4",
+    "src_video_path": "src/2585270536186697_part0_the_brick_fireplace_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the brick fireplace — it’s glowing orange inside.",
+      "Eliminate the brick fireplace with the glowing interior, located on the left side of the scene.",
+      "Cut out the brick fireplace on the left — notice its red brickwork, dark arched opening, and the firelight illuminating part of it.",
+      "Delete the brick fireplace on the left side: it has a warm orange glow, red brick walls, a dark arched opening, and unlit red candles at its base — all partially lit by the fire."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2448022688649794_part0.mp4",
+    "src_video_path": "src/2448022688649794_part0_the_small_gray_tombstone_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the gray tombstone with a skull cross.",
+      "Eliminate the weathered tombstone featuring a skull cross in the lower-left foreground.",
+      "Cut out the small gray tombstone with a rounded top and skull cross, standing upright near a blurred figure and lantern in the lower-left corner.",
+      "Delete the gray, weathered tombstone with a carved skull-cross and “RIP 1762—1839” inscription — positioned upright in the lower-left foreground beside a glowing lantern and blurred figure."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2982582444409380.mp4",
+    "src_video_path": "src/2982582444409380_the_clipboard_with_papers_mask_video.mp4",
+    "text": [
+      "Take out the white clipboard with a metal clip.",
+      "Eliminate the white rectangular clipboard held in hand on the wooden desk.",
+      "Cut out the clipboard with a silver clip and lined paper, being written on at the desk.",
+      "Delete the white rectangular clipboard featuring a silver top clip, held by a hand over a wooden desk with a pen actively writing on its attached lined paper."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2650266911877692.mp4",
+    "src_video_path": "src/2650266911877692_the_woman_in_a_light_gray_polo_shirt_mask_video.mp4",
+    "text": [
+      "Take out the smiling woman in the gray polo shirt.",
+      "Eliminate the woman with dark hair and a gray polo, standing centered in the frame.",
+      "Cut out the smiling woman in a light gray collared polo, arms crossed, centered against a blurred office backdrop with shelves and windows.",
+      "Delete the smiling woman with dark hair pulled back, wearing a light gray short-sleeved polo with buttons, standing arms crossed in the center of the frame, in front of a modern office background with wooden shelving and large windows."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2319261363634295_part0.mp4",
+    "src_video_path": "src/2319261363634295_part0_the_white_paper_in_the_man's_hand_mask_video.mp4",
+    "text": [
+      "Take out the white paper in the foreground.",
+      "Eliminate the white rectangular paper held by a hand on the right side of the desk.",
+      "Cut out the printed white sheet being held at an angle by a hand, visible in front of the blurred laptop.",
+      "Delete the white rectangular sheet of paper with printed text—held at a slight angle by a hand in the foreground right, partially obscuring the blurred laptop on the desk."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2437474975359454.mp4",
+    "src_video_path": "src/2437474975359454_the_pink_fire_hydrant_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the pink fire hydrant—it’s the bright one in the foreground.",
+      "Eliminate the small pink fire hydrant with a white top, located in the lower right corner near the man in the suit.",
+      "Cut out the bright pink metal fire hydrant with a white top and side nozzle—it’s sitting on the pavement in the lower right, just right of the suited man and beside a tall thin pole.",
+      "Delete the small, shiny pink fire hydrant with a white top and side nozzle; it’s grounded on the pavement in the lower right foreground, positioned to the right of the man in the suit and at the base of a slender pole."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2881202774074512.mp4",
+    "src_video_path": "src/2881202774074512_the_woman_doing_a_squat_mask_video.mp4",
+    "text": [
+      "Take out the woman doing squats—she’s wearing a blue sports bra.",
+      "Eliminate the woman in the blue sports bra and black leggings, centered in the frame.",
+      "Cut out the woman squatting in profile, wearing athletic gear, positioned centrally against a blurred window background.",
+      "Delete the woman in a blue sports bra and black leggings, mid-squat with fists near her chest and ponytail visible, centered in a red box against soft-focus windows and white curtains."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2579956347076492.mp4",
+    "src_video_path": "src/2579956347076492_the_yellow_pillow_on_the_left_side_of_the_couch_mask_video.mp4",
+    "text": [
+      "Take out the yellow throw pillows from the sofa.",
+      "Eliminate the bright yellow square pillows sitting at both ends of the gray sofa.",
+      "Cut out the two vivid yellow square fabric pillows placed on the left and right sides of the sofa, with a blurred person visible in the center.",
+      "Delete the pair of soft, slightly wrinkled, solid yellow square throw pillows positioned at either end of the light gray sofa—keeping the central seated figure intact in the background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2579559463193914_part0.mp4",
+    "src_video_path": "src/2579559463193914_part0_the_blue_binder_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the blue notebook from the desk.",
+      "Eliminate the blue fabric notebook sitting in the left corner of the desk.",
+      "Cut out the small rectangular blue notebook with a white spine, positioned in front of the potted plant on the desk’s left side.",
+      "Remove the fabric-covered blue notebook featuring a circular metallic clasp — it’s resting on the left corner of the desk, just before the plant and to the left of the person typing on their laptop."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2135626234947930.mp4",
+    "src_video_path": "src/2135626234947930_the_yellow-handled_scissors_mask_video.mp4",
+    "text": [
+      "Take out the yellow-handled scissors.",
+      "Eliminate the yellow-handled scissors in the lower-right foreground.",
+      "Cut out the yellow-handled scissors held in a hand on the cluttered desk, slightly open and ready to use.",
+      "Delete the small scissors with bright yellow plastic handles and silver blades, held slightly open in the lower-right foreground against a blurred backdrop of sticky notes and a white tablet."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2987005652376135.mp4",
+    "src_video_path": "src/2987005652376135_the_woman_in_a_striped_apron_mask_video.mp4",
+    "text": [
+      "Take out the blonde woman holding a paintbrush.",
+      "Eliminate the smiling blonde woman in the yellow shirt standing center frame.",
+      "Cut out the woman in the yellow shirt and striped apron holding a paintbrush and palette, centered in the art studio backdrop.",
+      "Delete the blonde woman in a yellow short-sleeve shirt and black-and-white striped apron—smiling, upright, holding a paintbrush in her right hand and a white paint palette in her left—positioned centrally against the blurred art studio background with easels and a draped table."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2720385999358130.mp4",
+    "src_video_path": "src/2720385999358130_the_small_brown_bottle_in_the_woman's_hand_mask_video.mp4",
+    "text": [
+      "Take out the amber bottle with the white cap.",
+      "Eliminate the dark amber bottle with a white cap on the left side of the frame.",
+      "Cut out the small dark amber bottle with a white cap, held in hand in the foreground left, near a lamp-lit nightstand.",
+      "Delete the foreground-left amber bottle—small, dark glass, white cap, held in hand—with its sibling bottle visible on the right nightstand beside a lit lamp."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2334712955488663.mp4",
+    "src_video_path": "src/2334712955488663_the_stainless_steel_mixing_bowl_mask_video.mp4",
+    "text": [
+      "Take out the small silver mixing bowl.",
+      "Eliminate the metallic mixing bowl held above the white plate.",
+      "Cut out the round silver bowl with herbs, hovering over the salad plate and left of the larger bowl.",
+      "Remove the reflective silver mixing bowl with flared rim—containing chopped green herbs, suspended mid-air above the salad plate, and positioned to the left of the partially visible larger metallic bowl on wood."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2161498652848939.mp4",
+    "src_video_path": "src/2161498652848939_the_tall_green_plant_in_the_background_mask_video.mp4",
+    "text": [
+      "Take out the tall potted plant with green leaves.",
+      "Eliminate the slender potted plant with vibrant green leaves sitting to the right of the person in white.",
+      "Cut out the tall, leafy potted plant in a dark pot, positioned beside the blurred figure in white with a bookshelf visible nearby.",
+      "Remove the slender potted plant featuring long, thin green leaves in a dark ceramic or metal pot — it’s placed just right of the blurred white-coated figure, with a bookshelf in the background to its right."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2578276714058477_part0.mp4",
+    "src_video_path": "src/2578276714058477_part0_the_white_bottle_with_blue_label_on_the_shelf_behind_mask_video.mp4",
+    "text": [
+      "Take out the white bottle with the blue label.",
+      "Eliminate the small white plastic bottle with a blue label sitting on the right side of the desk.",
+      "Cut out the white plastic bottle with a blue label and pump cap, placed upright to the right of the man writing at the dark desk.",
+      "Remove the upright small white plastic bottle featuring a blue label and white pump dispenser, positioned on the right edge of the dark desk beside the man who’s writing."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2290058173078753.mp4",
+    "src_video_path": "src/2290058173078753_the_glass_mug_with_coffee_mask_video.mp4",
+    "text": [
+      "Take out the glass coffee mug with a spoon inside.",
+      "Eliminate the clear glass coffee mug sitting on the left side of the wooden table.",
+      "Cut out the glass mug filled with beige liquid, placed on the left of the table in front of someone.",
+      "Delete the small clear glass coffee mug—handle visible, spoon inside, light beige liquid—resting on the left side of the wooden table, directly in front of the person."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2952030588386049_part0.mp4",
+    "src_video_path": "src/2952030588386049_part0_the_yellow_combine_harvester_mask_video.mp4",
+    "text": [
+      "Take out the yellow and black combine harvester from the scene.",
+      "Eliminate the New Holland combine harvester in the lower center of the frame.",
+      "Cut out the large yellow and black combine harvester actively harvesting in the golden-brown field, located at the bottom center against a blurry sky.",
+      "Remove the large New Holland combine harvester — yellow and black, kicking up dust as it moves — positioned in the lower center of the frame during harvest, with a blurred blue sky and treeline in the background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2568924658490103.mp4",
+    "src_video_path": "src/2568924658490103_the_brown_ceramic_cup_mask_video.mp4",
+    "text": [
+      "Take out the ceramic cup — it’s two-toned with brown on top.",
+      "Eliminate the two-toned ceramic cup sitting on the white desk to the right of the laptop.",
+      "Cut out the matte brown-and-white ceramic cup placed on the white desk, just in front of the woman typing.",
+      "Remove the small stationary ceramic cup — matte brown upper body, white base — positioned on the white desk to the right of the dark laptop and directly in front of the typing woman."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2111210015904735_part0.mp4",
+    "src_video_path": "src/2111210015904735_part0_the_black_headphones_mask_video.mp4",
+    "text": [
+      "Take out the black over-ear headphones—they’re glossy and have a logo on the earcup.",
+      "Eliminate the glossy black over-ear headphones with a circular logo, worn on the person’s head covering their ears.",
+      "Cut out the black over-ear headphones with a shiny finish and visible earcup logo, positioned on the subject’s head against a blurred background.",
+      "Delete the glossy black over-ear headphones featuring a circular logo on the earcup, worn with the headband arched over hair and earcups covering ears—visible within the red bounding box and white mask outline."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2425007739820981.mp4",
+    "src_video_path": "src/2425007739820981_the_white_binder_on_the_middle_shelf_mask_video.mp4",
+    "text": [
+      "Take out the white binders with black rings.",
+      "Eliminate the set of white binders with black rings sitting on the shelf in the lower center.",
+      "Cut out the four upright white binders with black circular rings, positioned side-by-side on the shelf near the person in the lab coat.",
+      "Remove the four vertically aligned white rectangular binders—plastic or cardboard, with black rings at the top—standing on the shelf in the lower center, slightly left of the lab-coated person."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2225406080772558.mp4",
+    "src_video_path": "src/2225406080772558_the_black_smartphone_in_the_woman's_hands_mask_video.mp4",
+    "text": [
+      "Take out the black smartphone from the hand.",
+      "Eliminate the black rectangular phone in the lower-right corner of the frame.",
+      "Cut out the glossy black smartphone being held in the person’s right hand, visible in the lower-right quadrant.",
+      "Delete the black rectangular smartphone with a glossy finish—held in the right hand, angled as if in use, thumb resting on its side, positioned in the lower-right quadrant of the scene."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2167439345768826.mp4",
+    "src_video_path": "src/2167439345768826_the_man_in_a_white_hoodie_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the man in the white hoodie.",
+      "Eliminate the man in the white hoodie seated on the left side of the frame.",
+      "Cut out the seated man in the white hoodie looking at his laptop, positioned on the left with a blurred kitchen backdrop.",
+      "Remove the man with short dark hair wearing a white hooded sweatshirt—he’s seated on the left, focused on a laptop screen showing a video call, with kitchen cabinets and countertop softly blurred behind him."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2650179583320233.mp4",
+    "src_video_path": "src/2650179583320233_the_person_in_a_red_and_white_striped_shirt_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the person with light brown hair in the lower-left corner.",
+      "Eliminate the person wearing a striped white top, seated at the wooden desk in the lower-left area.",
+      "Cut out the seated person with light brown hair and a white top with red stripes, positioned left of the hanging light fixture against the green wall.",
+      "Delete the individual seated at the wooden desk in the lower-left frame—light brown hair, white top with red horizontal stripes, in front of a blurred “WORKSPACE” sign on a green wall and to the left of a hanging light."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2965336130542578_part0.mp4",
+    "src_video_path": "src/2965336130542578_part0_the_black_mannequin_in_the_background_mask_video.mp4",
+    "text": [
+      "Take out the black necktie — it’s the one hanging vertically on the left.",
+      "Eliminate the black necktie hanging on the left side, just beside the person in green.",
+      "Cut out the smooth black necktie with a tapered shape, hanging vertically to the left of the person in the green shirt, near the blurred sewing machine.",
+      "Delete the black fabric necktie — tapered with a wider knot and pointed tip — hanging vertically on the left side of frame, positioned left of the green-shirted person and smaller than the sewing machine in the background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2411569716475701.mp4",
+    "src_video_path": "src/2411569716475701_the_green_potted_plant_in_the_background_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the white cloud-shaped decor — it’s small and in the corner.",
+      "Eliminate the small white cloud-shaped object located in the upper-left corner of the frame.",
+      "Cut out the smooth, solid white cloud decor in the upper-left corner — it’s against a blurred living room background with a man on the sofa.",
+      "Remove the tiny, smooth, solid white cloud-shaped decoration sitting quietly in the upper-left corner — smaller than the nearby potted plant, set against a softly blurred living room scene with a seated man on the sofa."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2632751211309030.mp4",
+    "src_video_path": "src/2632751211309030_the_white_laptop_on_the_desk_mask_video.mp4",
+    "text": [
+      "Take out the white laptop with a silver keyboard.",
+      "Eliminate the white slim laptop resting near the desk edge, slightly leaning right.",
+      "Cut out the open white laptop with a silver keyboard and small logo, positioned in front of someone holding a blue folder, with a plant to its left.",
+      "Remove the white slim laptop—open, slightly tilted right, silver keyboard, small rectangular logo on lid—sitting in front of a person with a blue folder, base near desk edge, plant visible to its left."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2615568295605957_part0.mp4",
+    "src_video_path": "src/2615568295605957_part0_the_white_car_in_the_center_lane_mask_video.mp4",
+    "text": [
+      "Take out the white sedan parked on the road.",
+      "Eliminate the small white four-door sedan centered under the overpass.",
+      "Cut out the stationary white sedan viewed from above, sitting beneath the blurred overpass with visible pillars.",
+      "Delete the small, white, four-door sedan parked motionless on the road—shot from directly overhead, centered under the large overpass structure with vertical supports."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2912784781381029_part0.mp4",
+    "src_video_path": "src/2912784781381029_part0_the_black_backpack_with_blue_trim_mask_video.mp4",
+    "text": [
+      "Take out the black backpack with blue trim.",
+      "Eliminate the black backpack with blue trim on the person’s back near the waterfall.",
+      "Cut out the black fabric backpack with blue trim and a tripod attached, worn by the person standing on the wooden platform in the forest.",
+      "Delete the black fabric backpack featuring blue trim and a collapsed tripod on its side — currently carried by someone standing on a wooden platform, with a blurred waterfall and forest in the background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2523683177134421_part0.mp4",
+    "src_video_path": "src/2523683177134421_part0_the_green_folder_on_the_table_mask_video.mp4",
+    "text": [
+      "Take out the teal paper triangle from the desk.",
+      "Eliminate the small teal triangular paper object on the right side of the wooden desk.",
+      "Cut out the flat teal origami-style triangle lying beside the white notebook while the person writes.",
+      "Delete the small, folded teal paper triangle resting flat on the right edge of the wooden desk, just in front of the writer and next to the notebook."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2158991331358720.mp4",
+    "src_video_path": "src/2158991331358720_the_man_in_a_light_blue_shirt_mask_video.mp4",
+    "text": [
+      "Take out the man in the light blue shirt.",
+      "Eliminate the man wearing a light blue button-up, seated centrally in front of a laptop.",
+      "Cut out the man with curly brown hair and stubble, arms crossed, sitting in front of a dark gray laptop against blurred bookshelves.",
+      "Remove the seated man with curly brown hair and light stubble, arms crossed, in a light blue long-sleeved shirt, positioned center frame before a dark gray laptop with wooden shelves blurred in the background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2997167889542035.mp4",
+    "src_video_path": "src/2997167889542035_the_silver_laptop_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the silver laptop with a black keyboard.",
+      "Eliminate the silver laptop with a black keyboard sitting on the left side of the white desk.",
+      "Cut out the sleek silver laptop with a black keyboard, placed open on the left of the white desk and angled slightly right.",
+      "Remove the open silver laptop featuring a metallic finish and black keyboard—resting flat on the left side of the white desk, screen facing forward, angled gently toward the right."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2956702019802339.mp4",
+    "src_video_path": "src/2956702019802339_the_white_laptop_on_the_table_mask_video.mp4",
+    "text": [
+      "Take out the white laptop with its screen open.",
+      "Eliminate the white laptop sitting on the dark desk in front of the person.",
+      "Cut out the white laptop with visible keyboard and screen, angled upward, placed on the dark desk in front of someone.",
+      "Delete the white open laptop—keyboard and screen visible, lid angled up as if in use, right side partly blocked by a vertical object—sitting on the dark desk ahead of the person."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2289709420944760.mp4",
+    "src_video_path": "src/2289709420944760_the_black_and_white_cow_in_the_foreground_mask_video.mp4",
+    "text": [
+      "Take out the black-and-white cow with the yellow ear tag.",
+      "Eliminate the spotted Holstein cow wearing a green halter, positioned on the left foreground.",
+      "Cut out the black-and-white Holstein cow with a yellow ear tag and green halter, standing in the barn aisle near the metal feeding rail.",
+      "Delete the Holstein cow — black patches on white coat, yellow ear tag, green halter — standing head-down by the feeding rail in the left foreground, while other cows and a blurred worker appear behind it."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2411092518526053_part0.mp4",
+    "src_video_path": "src/2411092518526053_part0_the_open_notebook_on_the_table_mask_video.mp4",
+    "text": [
+      "Take out the white notebook with faint writing on it.",
+      "Eliminate the open white notebook placed in front of the child, slightly right of their left elbow.",
+      "Cut out the open white notebook with illegible handwritten text, lying flat on the desk in front of the smiling child.",
+      "Delete the open white-paged notebook showing faint handwriting on the left page — positioned flat on the desk directly before the child and just right of their left elbow, spine and pages clearly visible against the blurred backdrop."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2349907039364938.mp4",
+    "src_video_path": "src/2349907039364938_the_wicker_chair_with_black_metal_legs_mask_video.mp4",
+    "text": [
+      "Take out the wicker chair with the black frame.",
+      "Eliminate the wicker chair with black metal frame on the left side of the beach.",
+      "Cut out the wicker chair featuring black finials, sitting on sand with its back to the camera, near blurred waves.",
+      "Delete the wicker chair — light beige woven seat and back, black metal frame, decorative finials — positioned left of ocean waves on the beach, partially occupied by someone in dark clothes."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2501462168235784_part0.mp4",
+    "src_video_path": "src/2501462168235784_part0_the_woman_with_long_dark_hair_in_a_ponytail_mask_video.mp4",
+    "text": [
+      "Take out the person with dark hair in a ponytail.",
+      "Eliminate the person with long dark hair tied back, standing centered in the red box.",
+      "Cut out the person seen from behind, wearing a light blue loose top, centered against green with arms at sides.",
+      "Delete the individual with long dark hair in a low ponytail, dressed in a light blue short-sleeved top, standing relaxed and centered within the red bounding box on the green screen."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2338746142640078_part0.mp4",
+    "src_video_path": "src/2338746142640078_part0_the_large_green_potted_plant_mask_video.mp4",
+    "text": [
+      "Take out the rubber plant—it’s got those big shiny green leaves.",
+      "Eliminate the potted rubber plant sitting to the left of the blurred person.",
+      "Cut out the glossy-leafed rubber plant in the black pot, positioned in front of the white shelf and left of the figure.",
+      "Delete the sharply focused potted rubber plant with dark oval leaves and a thick woody stem, centered in the red box, left of the blurred figure and in front of the white shelving unit."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2358473657663260.mp4",
+    "src_video_path": "src/2358473657663260_the_green_pillow_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the olive-green pillow from the sofa.",
+      "Eliminate the rectangular olive-green pillow sitting on the left armrest of the sofa.",
+      "Cut out the slightly wrinkled olive-green fabric pillow resting on the left armrest in the upper-left of the scene.",
+      "Delete the small, olive-green, rectangular fabric pillow—noticeably wrinkled—perched on the light gray sofa’s left armrest in the upper-left frame area."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2300754251657278.mp4",
+    "src_video_path": "src/2300754251657278_the_rusted_metal_pole_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the rusty metal pole on the right.",
+      "Eliminate the weathered metal pole with peeling paint located on the right edge of the grassy area.",
+      "Cut out the tall, rust-stained metal pole standing vertically near the path, just behind the blurred walking figure.",
+      "Delete the tall, peeling-white-paint metal pole with visible rust stains—it’s standing upright on the right side, slightly behind a person walking along the grassy path edge."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2323369354349366_part0.mp4",
+    "src_video_path": "src/2323369354349366_part0_the_black_plastic_crate_in_the_foreground_mask_video.mp4",
+    "text": [
+      "Take out the black crate with red apples.",
+      "Eliminate the black plastic crate filled with red apples, positioned in the foreground on the right.",
+      "Cut out the black crate with red apples and grid-patterned sides, sitting slightly right in the foreground, with another crate peeking in from the left.",
+      "Delete the black rectangular plastic crate filled with red apples, featuring a grid design, placed front-right in the frame, partially overlapping a second crate to its left and with a blurred person in a plaid shirt standing behind it."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2409756042011140.mp4",
+    "src_video_path": "src/2409756042011140_the_wooden_frame_on_the_table_mask_video.mp4",
+    "text": [
+      "Take out the wooden frame—it’s light brown and rectangular.",
+      "Eliminate the light-brown wooden frame sitting horizontally in the foreground, left of the power drill.",
+      "Cut out the rectangular wooden frame with visible grain, positioned flat in front of the blurred laptop and beside the drill.",
+      "Delete the rough-textured, light-brown wooden frame lying horizontally in the foreground—it’s slightly overlapping the red-and-black drill’s handle on the right, with a laptop blurred behind it."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2250225439175177.mp4",
+    "src_video_path": "src/2250225439175177_the_orange_level_tool_mask_video.mp4",
+    "text": [
+      "Take out the yellow and black spirit level—it’s the one with the green vials.",
+      "Eliminate the spirit level with green vials lying horizontally near the calculator in the foreground.",
+      "Cut out the yellow-black spirit level with three green alignment vials, resting on blueprints below a hand and beside a calculator.",
+      "Delete the horizontal yellow-black spirit level—featuring three green liquid vials for alignment—positioned on blueprints in the foreground, just under a hand and adjacent to a calculator."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2337463069639511_part0.mp4",
+    "src_video_path": "src/2337463069639511_part0_the_purple_yoga_mat_mask_video.mp4",
+    "text": [
+      "Take out the purple yoga mat—notice its grid pattern.",
+      "Eliminate the purple yoga mat lying under the person’s feet on the wooden floor.",
+      "Cut out the textured purple yoga mat with curved edges, placed centrally at the bottom of the frame under someone’s legs.",
+      "Delete the rectangular purple yoga mat—non-slip, grid-patterned, slightly curved edges—lying flat on the wooden floor, partially covered by legs, centered in the lower frame within the red box."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2280365766764795.mp4",
+    "src_video_path": "src/2280365766764795_the_yellow_handrail_behind_the_woman_mask_video.mp4",
+    "text": [
+      "Take out the yellow handrail above the bus seat.",
+      "Eliminate the yellow curved handrail positioned over the blue bus seat near the person in white.",
+      "Cut out the smooth yellow tubular handrail above the blue bus seat, slightly right of the passenger in the white jacket.",
+      "Remove the yellow plastic-coated curved handrail hovering horizontally above the blue bus seat—just to the right of the seated person in white, serving as a passenger support."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2442923456322013.mp4",
+    "src_video_path": "src/2442923456322013_the_woman_in_a_floral_dress_mask_video.mp4",
+    "text": [
+      "Take out the woman in the floral dress.",
+      "Eliminate the woman wearing a floral dress, seated center frame.",
+      "Cut out the woman in the vibrant floral dress sitting sideways on a dark chair, centered with a blurred sofa and table in the background.",
+      "Delete the light-brown-haired woman in the strapless knee-length floral dress (purple, pink, blue, green on white), holding a glass in her right hand, seated sideways on a dark-framed chair at the center of the frame, with a light sofa and fruit bowl table visible behind her."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2436019019247712_part0.mp4",
+    "src_video_path": "src/2436019019247712_part0_the_man_in_a_gray_shirt_mask_video.mp4",
+    "text": [
+      "Take out the man in the gray polo shirt centered in the frame.",
+      "Eliminate the middle-aged man wearing a gray polo shirt, positioned right in the middle of the shot.",
+      "Cut out the focused man in a heathered gray polo with dark collar, standing center-frame against a blurred workshop backdrop.",
+      "Remove the light-blonde, middle-aged man in a short-sleeved gray heathered polo (dark collar, two-button placket), hands busy with a task, centered against soft-focus shelves and machinery."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2186498845506233.mp4",
+    "src_video_path": "src/2186498845506233_the_white_private_jet_mask_video.mp4",
+    "text": [
+      "Take out the white private jet—it’s the one with the blue and gold stripe.",
+      "Eliminate the white private jet with the blue-gold stripe, parked on the tarmac behind the blurred woman.",
+      "Cut out the white private jet featuring oval windows and an open door, parked on the tarmac with stairs down and ropes at the base, behind the foreground woman.",
+      "Remove the white private jet with blue and gold fuselage stripes, oval windows, an open door showing a person inside, stairs deployed and red velvet ropes at the base—positioned behind the blurred woman in the foreground."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2311050899624295.mp4",
+    "src_video_path": "src/2311050899624295_the_small_potted_plant_mask_video.mp4",
+    "text": [
+      "Take out the white ceramic pot with the green plant.",
+      "Eliminate the small white ceramic pot holding green grass-like foliage, sitting on the wooden surface to the right of the woman in yellow.",
+      "Cut out the compact, smooth white ceramic pot with vibrant green plant, positioned beneath the black utensil rack and beside the woman in yellow, against a blurred background.",
+      "Delete the rounded white ceramic pot with lush green grassy plant—it’s resting on the wooden counter to the right of the woman in the yellow shirt, just under the black utensil rack, clearly visible with smooth texture and soft lighting."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2577981334918981.mp4",
+    "src_video_path": "src/2577981334918981_the_white_laptop_mask_video.mp4",
+    "text": [
+      "Take out the white laptop in the foreground.",
+      "Eliminate the white slim laptop sitting on the desk in the lower-right corner.",
+      "Cut out the open white laptop with a silver keyboard being typed on, positioned on the light desk in the lower-right foreground.",
+      "Remove the actively used white slim laptop—silver keys and trackpad visible—located on the light-colored desk in the lower-right foreground, where hands are typing."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2385723998764328.mp4",
+    "src_video_path": "src/2385723998764328_the_woman_in_a_white_dress_walking_on_the_beach_mask_video.mp4",
+    "text": [
+      "Take out the woman in the white dress walking on the beach.",
+      "Eliminate the barefoot woman in the white tiered dress from the lower center of the frame.",
+      "Cut out the woman in the sleeveless white dress and straw hat, walking barefoot on sand, with ocean and temple blurred behind her.",
+      "Delete the woman wearing a white tiered sleeveless dress and light straw hat with dark band — seen from behind, centered low in frame, barefoot on beach, with distant temple silhouette and blurred ocean backdrop."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2626530910920477.mp4",
+    "src_video_path": "src/2626530910920477_the_white_vase_with_flowers_on_the_shelf_mask_video.mp4",
+    "text": [
+      "Take out the white vase with flowers.",
+      "Eliminate the small white ceramic vase holding flowers, located on the shelf to the right of the person.",
+      "Cut out the white ceramic vase with a narrow neck and rounded base, sitting on the shelf beside the person working on their laptop.",
+      "Delete the small white ceramic vase—narrow neck, rounded base, filled with white flowers—positioned on the shelf to the right of the person using their laptop."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2361248734045300.mp4",
+    "src_video_path": "src/2361248734045300_the_glass_bottle_with_a_cork_mask_video.mp4",
+    "text": [
+      "Take out the wine bottle with the cork stopper.",
+      "Eliminate the dark glass wine bottle in the bottom-right corner near the metal shelf.",
+      "Cut out the partially filled wine bottle with a light cork, sitting upright on a dark surface near the shelf edge.",
+      "Remove the dark glass wine bottle — upright, half-filled with clear liquid, corked, resting at the bottom-right corner on a dark surface beside a metal shelving unit."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2595530250930665.mp4",
+    "src_video_path": "src/2595530250930665_the_white_notebook_on_the_desk_mask_video.mp4",
+    "text": [
+      "Take out the white notebook with a black cover.",
+      "Eliminate the white rectangular notebook with a black cover sitting to the left of the child’s hand.",
+      "Cut out the open white notebook with curled pages, placed on the desk beside the child’s hand and in front of the silver laptop.",
+      "Remove the small white rectangular notebook—black cover, pages slightly curled—lying open on the desk, positioned left of the child’s hand and in front of the laptop."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2205035478099733.mp4",
+    "src_video_path": "src/2205035478099733_the_blue_liquid_in_the_Erlenmeyer_flask_mask_video.mp4",
+    "text": [
+      "Take out the glass flask with blue liquid.",
+      "Eliminate the Erlenmeyer flask filled with blue liquid on the right side of the lab bench.",
+      "Cut out the clear glass flask holding vibrant blue liquid, sitting to the right of the test tubes and in front of a blurred lab-coated figure.",
+      "Delete the Erlenmeyer flask—transparent glass, filled to the 150 mL mark with bright blue liquid—positioned on the right bench area, just right of the test tube row and before the out-of-focus researcher."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2978841023613808_part0.mp4",
+    "src_video_path": "src/2978841023613808_part0_the_silver_laptop_mask_video.mp4",
+    "text": [
+      "Take out the silver laptop—it’s slightly open and being held by someone.",
+      "Eliminate the silver laptop in the lower right corner, held by a person in red.",
+      "Cut out the matte-finish silver laptop, slightly open and angled toward the viewer, held by a red-sweatered person in the lower right.",
+      "Remove the silver laptop with a matte finish, lid partially open revealing part of the keyboard, held by a person in a red sweater in the lower right quadrant, angled toward the camera with screen facing away."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2185102984199068.mp4",
+    "src_video_path": "src/2185102984199068_the_purple_yoga_mat_mask_video.mp4",
+    "text": [
+      "Take out the light purple yoga mat—it’s the long one on the patio.",
+      "Eliminate the rectangular light purple yoga mat placed horizontally in front of the person, behind the water feature.",
+      "Cut out the smooth-textured light purple yoga mat lying flat on the stone patio, just behind the dark water feature and in front of the person.",
+      "Remove the long, rectangular, light purple yoga mat with fabric-like texture—it’s laid flat on the gray stone patio, positioned horizontally behind the water feature and in front of the person, edges sharply outlined by the white mask against a blurred background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2367935653364063.mp4",
+    "src_video_path": "src/2367935653364063_the_wooden_bowl_with_green_apples_mask_video.mp4",
+    "text": [
+      "Take out the wooden bowl with green apples from the table.",
+      "Eliminate the light brown wooden bowl sitting to the right of the tripod on the dark table.",
+      "Cut out the shallow wooden bowl with rounded rim and apples, placed in front of the masked person near the tripod.",
+      "Remove the footed light brown bowl holding green apples and one red berry — it’s on the dark table, right of the black tripod, and in front of the person wearing a mask."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2303812546681173.mp4",
+    "src_video_path": "src/2303812546681173_the_wooden_stool_with_an_open_book_mask_video.mp4",
+    "text": [
+      "Take out the green-bookmarked book from the scene.",
+      "Eliminate the open book with a green ribbon bookmark sitting on the wooden stool near the bottom left.",
+      "Cut out the blank-paged book resting on the light wooden stool in the foreground, just in front of the blurred seated figure.",
+      "Delete the open, blank-paged book with a green ribbon bookmark—placed on a small light-colored wooden stool near the bottom left foreground, directly before a softly blurred seated person."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2884880747933601_part0.mp4",
+    "src_video_path": "src/2884880747933601_part0_the_woman_in_a_white_lab_coat_mask_video.mp4",
+    "text": [
+      "Take out the smiling female doctor in the white coat.",
+      "Eliminate the female doctor wearing a stethoscope, centered in the red box.",
+      "Cut out the smiling female doctor in a white lab coat, positioned centrally against blurred wooden blinds.",
+      "Delete the dark-haired female doctor in a white lab coat over a light blue shirt, stethoscope around her neck, smiling at camera, centered inside the red bounding box against a blurred background of horizontal blinds."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2374731085803501.mp4",
+    "src_video_path": "src/2374731085803501_the_yellow_beehive_box_in_the_center_mask_video.mp4",
+    "text": [
+      "Take out the yellow beehive box in the foreground.",
+      "Eliminate the yellow rectangular beehive box positioned in the lower-left corner near the beekeeper.",
+      "Cut out the yellow wooden-style beehive box with side handles, located in the lower-left foreground beside the beekeeper holding a honeycomb frame.",
+      "Remove the yellow, two-sectioned plastic or painted wood beehive box—featuring molded side handles and a visible seam—sitting slightly left of center in the lower foreground, next to the beekeeper in tan gear handling a honeycomb frame."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2644319495952594.mp4",
+    "src_video_path": "src/2644319495952594_the_laptop_on_the_right_desk_mask_video.mp4",
+    "text": [
+      "Take out the tablet with the glowing blue screen.",
+      "Eliminate the dark tablet with a blue screen, located on the right side of the desk.",
+      "Cut out the slim, dark tablet with a glowing blue screen, sitting upright behind the person and to the right of the central monitor.",
+      "Remove the upright, rectangular dark tablet glowing with blue light — positioned slightly behind the seated person and to the right of the main monitor, clearly outlined against the blurred desk background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2471285335806742.mp4",
+    "src_video_path": "src/2471285335806742_the_red_heart_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the red heart cutout from the scene.",
+      "Eliminate the small red paper heart held over the person’s right eye.",
+      "Cut out the heart-shaped red paper cutout positioned in front of the face, covering the right eye against a black background.",
+      "Delete the solid red, paper-like heart cutout—precisely outlined in white—held by a hand over the right eye, set against a black backdrop with no other visible elements."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2127304687278717.mp4",
+    "src_video_path": "src/2127304687278717_the_glass_of_water_mask_video.mp4",
+    "text": [
+      "Take out the glass of water—it’s clear and about two-thirds full.",
+      "Eliminate the clear cylindrical glass of water sitting to the right of the silver laptop.",
+      "Cut out the transparent glass of water, filled to two-thirds, resting on the desk beside the laptop against a blurred office backdrop.",
+      "Remove the simple, handle-less glass of water—clear, cylindrical, two-thirds full, reflecting ambient light—positioned on the desk to the right of the silver laptop in the soft-focus office scene."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2658484215490352_part0.mp4",
+    "src_video_path": "src/2658484215490352_part0_the_woman_in_a_white_sports_bra_on_the_right_mask_video.mp4",
+    "text": [
+      "Take out the woman’s torso in the sports bra on the right side.",
+      "Eliminate the woman’s torso wearing white sports bra and gray shorts, positioned on the right of the frame.",
+      "Cut out the side-profile torso of a woman in white sports bra and gray athletic shorts, visible on the right against a gym backdrop.",
+      "Delete the woman’s toned torso clad in white sports bra and light gray athletic shorts, shown in side profile on the right side of the frame with blurred weight machines in the background."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2581365334001571_part0.mp4",
+    "src_video_path": "src/2581365334001571_part0_the_tall_white_lamp_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the cream lampshade—it’s lit and on the left.",
+      "Eliminate the illuminated cream lampshade sitting on the left, beside the yellow cushion.",
+      "Cut out the glowing cream-colored lampshade with a metal band, positioned on the left side next to a yellow cushion on a white sofa.",
+      "Delete the tall cylindrical cream lampshade lit from within, featuring a metallic mid-band, standing on the left side of the frame next to a yellow cushion on a white sofa."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2625397633922049.mp4",
+    "src_video_path": "src/2625397633922049_the_white_floor_lamp_mask_video.mp4",
+    "text": [
+      "Take out the tall floor lamp with a silver finish.",
+      "Eliminate the silver floor lamp standing on the right side next to the sofa.",
+      "Cut out the slender silver floor lamp positioned upright beside the light-colored sofa and partially in front of the white shelving unit.",
+      "Delete the tall, slender metallic silver floor lamp with a circular base—standing on the right, next to the sofa and slightly in front of the shelving unit, its pole rising to a mostly cropped lampshade."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2415065161845892.mp4",
+    "src_video_path": "src/2415065161845892_the_silver_laptop_on_the_desk_mask_video.mp4",
+    "text": [
+      "Take out the silver laptop with the Apple logo.",
+      "Eliminate the silver laptop with the white Apple logo sitting on the desk in front of the man.",
+      "Cut out the open silver laptop featuring the Apple logo, positioned on the light desk in front of the suited man, screen angled away.",
+      "Delete the silver Apple laptop — open, lid showing white logo, keyboard partially visible, resting on a light desk directly before a man in a suit, screen tilted slightly away from camera."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2442938551347842.mp4",
+    "src_video_path": "src/2442938551347842_the_rolled_white_towel_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the two white towels in the corner.",
+      "Eliminate the rolled white towels positioned in the bottom-left near the window.",
+      "Cut out the neatly rolled white towels resting side by side in the bottom-left, beside a person in a robe and near a large window.",
+      "Remove the pair of soft, textured white towels—rolled and placed side by side—located in the bottom-left corner, sitting near a window and just left of the person in the white robe."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2439732323861911_part0.mp4",
+    "src_video_path": "src/2439732323861911_part0_the_gold_trophy_in_her_hand_mask_video.mp4",
+    "text": [
+      "Take out the golden trophy from the frame.",
+      "Eliminate the small golden trophy resting in the lower-right corner.",
+      "Cut out the metallic golden trophy with a tiered top, sitting in the lower-right corner near a person in gray.",
+      "Delete the small, golden, metallic trophy with a conical tiered top and circular base, positioned in the lower-right corner on a surface in front of a person wearing a gray top and medal — outlined clearly by the white mask."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2585365757047824.mp4",
+    "src_video_path": "src/2585365757047824_the_black_calculator_on_the_right_side_of_the_desk_mask_video.mp4",
+    "text": [
+      "Take out the black calculator—it’s the one with the raised keypad.",
+      "Eliminate the black rectangular calculator sitting to the right of the silver laptop.",
+      "Cut out the black calculator with a dark display screen, resting on the white desk beside the laptop and in front of the man in the suit.",
+      "Delete the black electronic calculator—rectangular, with slightly raised keys and a small dark screen—positioned on the white desk to the right of the laptop, just ahead of the man holding a document."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2339695226011356_part0.mp4",
+    "src_video_path": "src/2339695226011356_part0_the_white_astronaut_suit_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the astronaut suit — it’s white and has that big dark helmet.",
+      "Eliminate the white astronaut suit with the dark visor, located on the left side of the frame.",
+      "Cut out the bulky white astronaut suit standing upright on the left — it’s taller than the blurred seated figures in front.",
+      "Delete the full-body white astronaut suit with segmented armor and a dark-tinted visor helmet; it’s stationary on the left within a red box, slightly towering over the out-of-focus foreground figures."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2310274798134458.mp4",
+    "src_video_path": "src/2310274798134458_the_man_in_a_green_jacket_walking_on_the_left_mask_video.mp4",
+    "text": [
+      "Take out the man in the green jacket walking near the cows.",
+      "Eliminate the man wearing a green jacket and black beanie on the left side of the cow herd.",
+      "Cut out the man in a green jacket over a blue shirt, walking forward on the dirt path beside the black-and-white cows.",
+      "Delete the man in the black beanie and dark pants, slightly angled as if mid-stride, moving forward on the dirt path to the left of the grazing herd."
+    ],
+    "object_size": "large"
+  },
+  {
+    "ref_video_path": "ref/2121863067476663_part0.mp4",
+    "src_video_path": "src/2121863067476663_part0_the_small_green_plant_in_the_white_pot_mask_video.mp4",
+    "text": [
+      "Take out the small green succulent on the desk.",
+      "Eliminate the artificial succulent in the white pot sitting on the right side of the desk.",
+      "Cut out the spiky green succulent in the white ceramic pot, placed beside the orange mug and in front of the lamp.",
+      "Remove the vibrant green, spiky artificial succulent potted in a simple white cylinder — it’s on the desk’s right edge, next to an orange mug and before the black desk lamp."
+    ],
+    "object_size": "small"
+  },
+  {
+    "ref_video_path": "ref/2393910299886839_part0.mp4",
+    "src_video_path": "src/2393910299886839_part0_the_person_with_brown_hair_mask_video.mp4",
+    "text": [
+      "Take out the person with brown wavy hair.",
+      "Eliminate the person with shoulder-length brown hair standing in the lower-left corner.",
+      "Cut out the person wearing a dark gray shirt, seen from behind, standing still in the lower-left against a hilly sunset.",
+      "Delete the still figure in the lower-left frame—shoulder-length wavy brown hair, dark gray shirt, facing a blurred sunset over rolling hills."
+    ],
+    "object_size": "small"
+  },
+  {
+    "ref_video_path": "ref/2965140052970187.mp4",
+    "src_video_path": "src/2965140052970187_the_plate_of_green_cucumbers_mask_video.mp4",
+    "text": [
+      "Take out the white ceramic plate with cucumbers.",
+      "Eliminate the small white ceramic plate holding cucumbers, located on the left side of the kitchen counter near the laptop.",
+      "Cut out the white ceramic plate with green cucumbers—some bumpy—sitting on the kitchen counter in the foreground, left of the open laptop and in front of the person in the blue apron.",
+      "Delete the small white ceramic plate filled with green cucumbers of varying sizes (some with bumpy skin), positioned on the kitchen counter foreground, to the left of the open laptop and directly in front of the person wearing a blue apron who’s writing."
+    ],
+    "object_size": "small"
+  }
+]

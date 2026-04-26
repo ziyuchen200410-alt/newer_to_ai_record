@@ -1,0 +1,1526 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  icon_type: emoji
+  mode: advanced-chat
+  name: 智能体远程计算
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/ollama:0.1.2@fcf107badccaf57948634ad2c557d393c3894138d83f4eb3f959e9a1d3a86512
+    version: null
+kind: app
+version: 0.6.0
+workflow:
+  conversation_variables:
+  - description: ''
+    id: 42817966-77c0-489f-9c28-bfbafe0ab34b
+    name: query_history
+    selector:
+    - conversation
+    - query_history
+    value: ''
+    value_type: string
+  - description: ''
+    id: 880605bb-6bb3-48d9-ab6e-c003119a5d3d
+    name: conversation_record
+    selector:
+    - conversation
+    - conversation_record
+    value: ''
+    value_type: string
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        file_upload_limit: 20
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: code
+      id: 1774078289915-false-1774078449742-target
+      selected: false
+      source: '1774078289915'
+      sourceHandle: 'false'
+      target: '1774078449742'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: answer
+      id: 1774078449742-source-answer-target
+      selected: false
+      source: '1774078449742'
+      sourceHandle: source
+      target: answer
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: assigner
+        targetType: answer
+      id: 1774079528807-source-1774079583928-target
+      selected: false
+      source: '1774079528807'
+      sourceHandle: source
+      target: '1774079583928'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: knowledge-retrieval
+      id: 1774078289915-true-1774079985510-target
+      selected: false
+      source: '1774078289915'
+      sourceHandle: 'true'
+      target: '1774079985510'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: assigner
+        targetType: answer
+      id: 1774104019445-source-1774081206818-target
+      selected: false
+      source: '1774104019445'
+      sourceHandle: source
+      target: '1774081206818'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1774075387032-source-1774231915266-target
+      selected: false
+      source: '1774075387032'
+      sourceHandle: source
+      target: '1774231915266'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774231915266-source-1774233037882-target
+      selected: false
+      source: '1774231915266'
+      sourceHandle: source
+      target: '1774233037882'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+      id: 1774233037882-source-1774078289915-target
+      selected: false
+      source: '1774233037882'
+      sourceHandle: source
+      target: '1774078289915'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: code
+      id: 1774079985510-source-1774234048614-target
+      selected: false
+      source: '1774079985510'
+      sourceHandle: source
+      target: '1774234048614'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774234048614-source-1774234824171-target
+      selected: false
+      source: '1774234048614'
+      sourceHandle: source
+      target: '1774234824171'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774234824171-source-1774235019570-target
+      selected: false
+      source: '1774234824171'
+      sourceHandle: source
+      target: '1774235019570'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774235019570-source-1774249116109-target
+      selected: false
+      source: '1774235019570'
+      sourceHandle: source
+      target: '1774249116109'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: assigner
+      id: 1774249116109-source-1774104019445-target
+      selected: false
+      source: '1774249116109'
+      sourceHandle: source
+      target: '1774104019445'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: code
+      id: 1774078289915-9b3b9ef3-29a5-4d1a-84a6-21402aa15b35-1774252429547-target
+      selected: false
+      source: '1774078289915'
+      sourceHandle: 9b3b9ef3-29a5-4d1a-84a6-21402aa15b35
+      target: '1774252429547'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774252429547-source-1774253025960-target
+      selected: false
+      source: '1774252429547'
+      sourceHandle: source
+      target: '1774253025960'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774253025960-source-1774253862435-target
+      selected: false
+      source: '1774253025960'
+      sourceHandle: source
+      target: '1774253862435'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: code
+      id: 1774253862435-source-1774254548089-target
+      selected: false
+      source: '1774253862435'
+      sourceHandle: source
+      target: '1774254548089'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: assigner
+      id: 1774254548089-source-1774079528807-target
+      selected: false
+      source: '1774254548089'
+      sourceHandle: source
+      target: '1774079528807'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables: []
+      height: 73
+      id: '1774075387032'
+      position:
+        x: -664.6389684060418
+        y: 193.87781736048152
+      positionAbsolute:
+        x: -664.6389684060418
+        y: 193.87781736048152
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        answer: '{{#1774078449742.answer#}}'
+        selected: false
+        title: 拒绝回复
+        type: answer
+        variables: []
+      height: 103
+      id: answer
+      position:
+        x: 1343.6058682999383
+        y: 491.35880946464306
+      positionAbsolute:
+        x: 1343.6058682999383
+        y: 491.35880946464306
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 051ca17d-06fb-4053-b55e-85e5d77394da
+            value: '1'
+            varType: string
+            variable_selector:
+            - '1774231915266'
+            - classification
+          id: 'true'
+          logical_operator: and
+        - case_id: 9b3b9ef3-29a5-4d1a-84a6-21402aa15b35
+          conditions:
+          - comparison_operator: contains
+            id: 6d71acb3-546f-4485-9407-610edf4fd545
+            value: '2'
+            varType: string
+            variable_selector:
+            - '1774231915266'
+            - classification
+          id: 9b3b9ef3-29a5-4d1a-84a6-21402aa15b35
+          logical_operator: and
+        selected: false
+        title: 条件分支
+        type: if-else
+      height: 220
+      id: '1774078289915'
+      position:
+        x: 439.6449650818647
+        y: 214.87781736048152
+      positionAbsolute:
+        x: 439.6449650818647
+        y: 214.87781736048152
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(query:\
+          \ str):\n    \"\"\"\n    节点 3：专业咨询引导\n    逻辑：当输入模糊或偏离业务时，以资深财务顾问的身份提供逻辑补全建议。\n\
+          \    \"\"\"\n    for key in list(os.environ.keys()):\n        if \"proxy\"\
+          \ in key.lower():\n            del os.environ[key]\n\n    HOST = \"host.docker.internal\"\
+          \ \n    PORT = 11434\n    \n    # 核心指令：将“冷峻”升级为“资深顾问式温和”\n    system_content\
+          \ = \"\"\"# Role\n你是一位资深的“南京大学财务报销政策咨询顾问”。你对《南京大学常见财务报销业务指南》有极高的专业理解，语气专业且富有引导性。\n\
+          \n# Task\n1. **意图挖掘**：即便用户表述简单（如“北京差旅”），也要识别出背后的业务需求，不要轻易判定为无关闲聊。\n2. **逻辑要素审计**：针对不完整的请求，应专业地指出核算该业务所需的必备因子。\n\
+          \   - 差旅费业务：提醒用户核算需锚定[人员类别(一/二/三类)]、[经费性质]及[交通工具等级]。\n   - 劳务/办公业务：提醒用户明确具体的[业务性质]。\n\
+          3. **专业拒绝**：若输入完全脱离财务领域（如：询问非业务问题），应以礼貌且专业的方式告知服务边界，并引导用户回到报销咨询。\n\n# Terminology\
+          \ Alignment (术语对齐)\n- 必须精准使用：一类/二类/三类人员、城市间交通费、住宿费限额、伙食补助费包干。\n\n# Tone\
+          \ & Style\n- 语气：专业、客观、从容。\n- 策略：不使用生硬的拒绝词，改用“为了给您提供更精确的核算建议，请明确...”或“目前的要素尚不足以判定标准，建议补充...”\n\
+          - 严禁任何情绪化的夸奖，保持资深顾问的职业克制。\"\"\"\n\n    payload = {\n        \"model\": \"\
+          qwen3.5:9b\",\n        \"messages\": [\n            {\"role\": \"system\"\
+          , \"content\": system_content},\n            {\"role\": \"user\", \"content\"\
+          : f\"用户当前输入: {query}\"}\n        ],\n        \"stream\": False,\n      \
+          \  \"think\": False,\n        \"options\": {\n            \"temperature\"\
+          : 0.2, # 锁定低随机性，确保专业稳重\n            \"num_predict\": 400\n        }\n  \
+          \  }\n    \n    try:\n        conn = http.client.HTTPConnection(HOST, PORT,\
+          \ timeout=40)\n        conn.request(\"POST\", \"/api/chat\", json.dumps(payload),\
+          \ {\"Content-Type\": \"application/json\"})\n        res = conn.getresponse()\n\
+          \        raw_data = res.read().decode('utf-8')\n        conn.close()\n \
+          \       \n        # [物理审计]：解析完整响应体以提取 Token 计数\n        full_res = json.loads(raw_data)\n\
+          \        input_tokens = full_res.get(\"prompt_eval_count\", 0)\n       \
+          \ output_tokens = full_res.get(\"eval_count\", 0)\n        total_tokens\
+          \ = input_tokens + output_tokens\n        \n        llm_answer = full_res.get(\"\
+          message\", {}).get(\"content\", \"\").strip()\n        \n        # 物理切除思维链\n\
+          \        answer = re.sub(r'<think>.*?</think>', '', llm_answer, flags=re.DOTALL).strip()\n\
+          \        \n        return {\n            \"answer\": answer,\n         \
+          \   \"input_tokens\": str(input_tokens),\n            \"output_tokens\"\
+          : str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n        \n    except Exception as e:\n        # 异常链路物理熔断，Token\
+          \ 计数归零\n        return {\n            \"answer\": \"由于系统连接波动，暂时无法为您提供详细引导。为确保核算准确，建议您补充：人员职级、经费性质及具体报销科目。\"\
+          ,\n            \"input_tokens\": \"0\",\n            \"output_tokens\":\
+          \ \"0\",\n            \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          answer:
+            children: null
+            type: string
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        title: 回答拒绝
+        type: code
+        variables:
+        - value_selector:
+          - sys
+          - query
+          value_type: string
+          variable: query
+      height: 81
+      id: '1774078449742'
+      position:
+        x: 1023.938871159747
+        y: 491.35880946464306
+      positionAbsolute:
+        x: 1023.938871159747
+        y: 491.35880946464306
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        items:
+        - input_type: variable
+          operation: over-write
+          value:
+          - '1774253862435'
+          - final_table
+          variable_selector:
+          - conversation
+          - query_history
+          write_mode: over-write
+        - input_type: variable
+          operation: over-write
+          value:
+          - '1774254548089'
+          - result
+          variable_selector:
+          - conversation
+          - conversation_record
+          write_mode: over-write
+        selected: false
+        title: 修改记录信息
+        type: assigner
+        version: '2'
+      height: 110
+      id: '1774079528807'
+      position:
+        x: 2438.3211749714546
+        y: 340.5176611211991
+      positionAbsolute:
+        x: 2438.3211749714546
+        y: 340.5176611211991
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        answer: '{{#1774254548089.result#}}'
+        selected: false
+        title: 返回记录结果
+        type: answer
+        variables: []
+      height: 103
+      id: '1774079583928'
+      position:
+        x: 2740.3211749714546
+        y: 340.5176611211991
+      positionAbsolute:
+        x: 2740.3211749714546
+        y: 340.5176611211991
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        dataset_ids:
+        - bk2UnZySSSURe/cHS0CDTAoHM8HzLL4eh/VKfOM9Swl0YU+7GC5hIFq0u3yWdd8F
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: weighted_score
+          score_threshold: null
+          top_k: 8
+          weights:
+            keyword_setting:
+              keyword_weight: 0.4
+            vector_setting:
+              embedding_model_name: nomic-embed-text
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.6
+            weight_type: customized
+        query_attachment_selector: []
+        query_variable_selector:
+        - '1774233037882'
+        - refine_query
+        retrieval_mode: multiple
+        selected: false
+        title: 检索内容
+        type: knowledge-retrieval
+      height: 90
+      id: '1774079985510'
+      position:
+        x: 752.350781177561
+        y: 201.6273785249445
+      positionAbsolute:
+        x: 752.350781177561
+        y: 201.6273785249445
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        answer: '{{#1774235019570.final_audit_report#}}'
+        selected: false
+        title: 回复
+        type: answer
+        variables: []
+      height: 103
+      id: '1774081206818'
+      position:
+        x: 2733.4630784813357
+        y: 198.38324137803784
+      positionAbsolute:
+        x: 2733.4630784813357
+        y: 198.38324137803784
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        items:
+        - input_type: variable
+          operation: over-write
+          value:
+          - '1774233037882'
+          - refine_query
+          variable_selector:
+          - conversation
+          - query_history
+          write_mode: over-write
+        - input_type: variable
+          operation: over-write
+          value:
+          - '1774235019570'
+          - final_audit_report
+          variable_selector:
+          - conversation
+          - conversation_record
+          write_mode: over-write
+        selected: false
+        title: 变量赋值 2
+        type: assigner
+        version: '2'
+      height: 110
+      id: '1774104019445'
+      position:
+        x: 2431.4630784813353
+        y: 198.38324137803784
+      positionAbsolute:
+        x: 2431.4630784813353
+        y: 198.38324137803784
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(query:\
+          \ str, query_history: str, conversation_record: str):\n    \"\"\"\n    节点\
+          \ 1.1：多轮意图分类器\n    物理任务：结合对话记录与事实库，判定用户当前动作是“新发起查询”、“补全上轮缺项”还是“闲聊”。\n  \
+          \  \"\"\"\n    for key in list(os.environ.keys()):\n        if \"proxy\"\
+          \ in key.lower():\n            del os.environ[key]\n\n    HOST = \"host.docker.internal\"\
+          \ \n    PORT = 11434\n    \n    # 1. 结构化指令：增加“历史路径”判别逻辑\n    system_content\
+          \ = \"\"\"# Role\n南京大学财务意图判定器。\n\n# Intent Matrix & Multi-turn Logic:\n\n\
+          - search (1) [发起/深入查询]:\n  * 用户提出新标准请求，或在已有事实基础上追加新的查询动作。\n  * 例子：(空背景)\
+          \ -> \"坐火车标准\"；(已知教授) -> \"那去北京的住宿费呢？\"\n\n- supplement (2) [响应式补全]:\n \
+          \ * 用户回答了上轮系统提出的补全要求。\n  * 关键判定：若 conversation_record 末尾是系统在询问缺失信息（如：询问职级、经费），用户当前的回答即为\
+          \ supplement。\n  * 例子：系统问\"请补充经费性质\" -> 用户回\"横向\"\n\n- chat (3) [闲聊/无关]:\n\
+          \  * 礼貌用语或与财务审计无关的内容。\n\n# Output (STRICT JSON):\n{\"intent\": \"search/supplement/chat\"\
+          , \"reason\": \"结合对话脉络的判定理由\"}\"\"\"\n\n    # 2. 构造上下文载荷\n    # 物理压缩：只给模型看最近两轮对话，防止干扰\n\
+          \    recent_chat = conversation_record[-600:] if conversation_record else\
+          \ \"无\"\n    input_data = f\"【已存事实】: {query_history}\\n【近期对话】: {recent_chat}\\\
+          n【用户当前输入】: {query}\"\n\n    payload = {\n        \"model\": \"qwen3.5:9b\"\
+          ,\n        \"messages\": [\n            {\"role\": \"system\", \"content\"\
+          : system_content},\n            {\"role\": \"user\", \"content\": input_data}\n\
+          \        ],\n        \"stream\": False, \"think\": False,\n        \"options\"\
+          : {\"temperature\": 0, \"format\": \"json\"}\n    }\n    \n    try:\n  \
+          \      conn = http.client.HTTPConnection(HOST, PORT, timeout=300)\n    \
+          \    conn.request(\"POST\", \"/api/chat\", json.dumps(payload), {\"Content-Type\"\
+          : \"application/json\"})\n        res = conn.getresponse()\n        raw_answer\
+          \ = res.read().decode('utf-8')\n        conn.close()\n\n        # 解析与清理\n\
+          \        content_raw = json.loads(raw_answer).get(\"message\", {}).get(\"\
+          content\", \"\").strip()\n        data = json.loads(re.search(r'\\{.*\\\
+          }', content_raw, re.DOTALL).group())\n\n        raw_intent = data.get(\"\
+          intent\", \"chat\")\n        intent_map = {\"search\": \"1\", \"supplement\"\
+          : \"2\", \"chat\": \"3\"}\n        \n        return {\n            \"classification\"\
+          : str(intent_map.get(raw_intent, \"3\")),\n            \"intent\": str(raw_intent),\n\
+          \            \"logic_warning\": f\"【意图审计】：{data.get('reason', '')}\"\n \
+          \       }\n    except Exception as e:\n        return {\"classification\"\
+          : \"3\", \"intent\": \"chat\", \"logic_warning\": f\"LOGIC_ERROR: {str(e)}\"\
+          }"
+        code_language: python3
+        outputs:
+          classification:
+            children: null
+            type: string
+          intent:
+            children: null
+            type: string
+          logic_warning:
+            children: null
+            type: string
+        selected: false
+        title: 意图分析子节点
+        type: code
+        variables:
+        - value_selector:
+          - sys
+          - query
+          value_type: string
+          variable: query
+        - value_selector:
+          - conversation
+          - query_history
+          value_type: string
+          variable: query_history
+        - value_selector:
+          - conversation
+          - conversation_record
+          value_type: string
+          variable: conversation_record
+      height: 52
+      id: '1774231915266'
+      position:
+        x: -335.5475819210744
+        y: 214.87781736048152
+      positionAbsolute:
+        x: -335.5475819210744
+        y: 214.87781736048152
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(query:\
+          \ str, query_history: str, conversation_record: str):\n    \"\"\"\n    节点\
+          \ 1.2：精密事实提取器 (Few-shot 增强版)\n    物理任务：1. 修正/补全核算矩阵；2. 物理注入表格(一)或(二)的检索指纹。\n\
+          \    \"\"\"\n    for key in list(os.environ.keys()):\n        if \"proxy\"\
+          \ in key.lower():\n            del os.environ[key]\n\n    HOST = \"host.docker.internal\"\
+          \ \n    PORT = 11434\n    \n    # 1. 构造 Few-shot 引导指令\n    system_content\
+          \ = \"\"\"# Role\n南京大学财务事实精密提取员。\n\n# Task:\n对比【已有事实】与【新输入】，更新事实状态并判定审计主题。\n\
+          \n# Few-shot Examples (逻辑对撞示例):\n\n- 示例 1 [地址补全联动 - 判定为both]:\n  * 已有事实:\
+          \ {\"职级\": \"教授\", \"目的地\": \"未知\", \"经费性质\": \"未知\"}\n  * 新输入: \"我要去北京\"\
+          \n  * 输出: {\n      \"facts\": {\"职级\": \"教授\", \"目的地\": \"北京\", \"经费性质\"\
+          : \"未知\"}, \n      \"topic\": \"both\"\n    }\n\n- 示例 2 [住宿专项判定]:\n  * 已有事实:\
+          \ {\"职级\": \"副教授\", \"目的地\": \"南京\", \"经费性质\": \"未知\"}\n  * 新输入: \"在那边住宾馆每天限额多少？\"\
+          \n  * 输出: {\n      \"facts\": {\"职级\": \"副教授\", \"目的地\": \"南京\", \"经费性质\"\
+          : \"未知\"}, \n      \"topic\": \"accommodation\"\n    }\n\n- 示例 3 [交通工具判定]:\n\
+          \  * 已有事实: {\"职级\": \"讲师\", \"目的地\": \"上海\", \"经费性质\": \"未知\"}\n  * 新输入:\
+          \ \"用横向结题经费，能坐高铁吗？\"\n  * 输出: {\n      \"facts\": {\"职级\": \"讲师\", \"目的地\"\
+          : \"上海\", \"经费性质\": \"横向科研\"}, \n      \"topic\": \"transportation\"\n \
+          \   }\n\n- 示例 4 [冲突与地址更新 - 判定为both]:\n  * 已有事实: {\"职级\": \"正高\", \"目的地\"\
+          : \"南京\", \"经费性质\": \"纵向\"}\n  * 新输入: \"目的地改去西安\"\n  * 输出: {\n      \"facts\"\
+          : {\"职级\": \"正高\", \"目的地\": \"西安\", \"经费性质\": \"纵向\"}, \n      \"topic\"\
+          : \"both\"\n    }\n\n# Mapping Rules:\n1. 职级映射: \"杰青/长江/登峰A\" -> 院士/二级教授级别;\
+          \ \"登峰B/优青\" -> 正高/副高级别。\n2. 经费映射: \"横向/结题/公司钱\" -> 横向科研。\n3. 主题判定: 涉及交通工具/票价\
+          \ -> transportation; 涉及酒店/房费 -> accommodation; 都有 -> both。\n\n# Output (STRICT\
+          \ JSON):\n{\"facts\": {...}, \"topic\": \"transportation/accommodation/both/none\"\
+          }\"\"\"\n\n    input_data = f\"【已有事实】: {query_history}\\n【新输入】: {query}\"\
+          \n\n    payload = {\n        \"model\": \"qwen3.5:9b\",\n        \"messages\"\
+          : [\n            {\"role\": \"system\", \"content\": system_content},\n\
+          \            {\"role\": \"user\", \"content\": input_data}\n        ],\n\
+          \        \"stream\": False, \"think\": False,\n        \"options\": {\"\
+          temperature\": 0, \"format\": \"json\"}\n    }\n    \n    try:\n       \
+          \ conn = http.client.HTTPConnection(HOST, PORT, timeout=300)\n        conn.request(\"\
+          POST\", \"/api/chat\", json.dumps(payload), {\"Content-Type\": \"application/json\"\
+          })\n        res = conn.getresponse()\n        raw_answer = res.read().decode('utf-8')\n\
+          \        conn.close()\n\n        # --- [物理升级]：解析全文并提取 Token 指标 ---\n   \
+          \     full_res = json.loads(raw_answer)\n        input_tokens = full_res.get(\"\
+          prompt_eval_count\", 0)\n        output_tokens = full_res.get(\"eval_count\"\
+          , 0)\n        total_tokens = input_tokens + output_tokens\n\n        # 2.\
+          \ 健壮解析与指纹注入\n        content_raw = full_res.get(\"message\", {}).get(\"\
+          content\", \"\").strip()\n        data = json.loads(re.search(r'\\{.*\\\
+          }', content_raw, re.DOTALL).group())\n\n        # 物理指纹：强制注入检索增强词\n     \
+          \   fingerprint_t1 = \"（一）出差人员乘坐城市间交通工具应不超过以下标准\"\n        fingerprint_t2\
+          \ = \"（二）南京大学国（境）内差旅住宿费限额标准明细表\"\n        \n        topic = data.get(\"\
+          topic\", \"none\")\n        injected_headers = []\n        if topic in [\"\
+          transportation\", \"both\"]:\n            injected_headers.append(fingerprint_t1)\n\
+          \        if topic in [\"accommodation\", \"both\"]:\n            injected_headers.append(fingerprint_t2)\n\
+          \        \n        # 3. 构造 Refine Query\n        current_facts = data.get(\"\
+          facts\", {})\n        # 拼接检索词：指纹关键词 + 更新后的事实 + 原始提问\n        fact_slice\
+          \ = f\"{current_facts.get('职级','')} {current_facts.get('目的地','')} {current_facts.get('经费性质','')}\"\
+          \n        refine_query = f\"{' '.join(injected_headers)} {fact_slice} {query}\"\
+          .strip()\n\n        return {\n            \"detected_facts\": json.dumps(current_facts,\
+          \ ensure_ascii=False),\n            \"refine_query\": refine_query,\n  \
+          \          \"logic_warning\": f\"【事实更新成功】已挂载 {topic} 物理指纹。\",\n        \
+          \    # --- 返回 Token 消耗数据 ---\n            \"input_tokens\": str(input_tokens),\n\
+          \            \"output_tokens\": str(output_tokens),\n            \"total_tokens\"\
+          : str(total_tokens)\n        }\n        \n    except Exception as e:\n \
+          \       return {\n            \"detected_facts\": query_history, \n    \
+          \        \"refine_query\": query, \n            \"logic_warning\": f\"EXTRACTION_FAILURE:\
+          \ {str(e)}\",\n            \"input_tokens\": \"0\",\n            \"output_tokens\"\
+          : \"0\",\n            \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          detected_facts:
+            children: null
+            type: string
+          input_tokens:
+            children: null
+            type: string
+          logic_warning:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          refine_query:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 内容提取节点LLM
+        type: code
+        variables:
+        - value_selector:
+          - sys
+          - query
+          value_type: string
+          variable: query
+        - value_selector:
+          - conversation
+          - query_history
+          value_type: string
+          variable: query_history
+        - value_selector:
+          - conversation
+          - conversation_record
+          value_type: string
+          variable: conversation_record
+      height: 52
+      id: '1774233037882'
+      position:
+        x: 57.13347710644578
+        y: 214.87781736048152
+      positionAbsolute:
+        x: 57.13347710644578
+        y: 214.87781736048152
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(result:\
+          \ list, refine_query: str):\n    \"\"\"\n    节点 1.1：表格矩阵审计官 (逻辑闭环版)\n  \
+          \  物理任务：1. 表头焊接；2. 完备性自检；3. 逻辑回溯(返回整行)；4. Token 消耗统计。\n    \"\"\"\n    #\
+          \ [1] 环境清理\n    for key in list(os.environ.keys()):\n        if \"proxy\"\
+          \ in key.lower():\n            del os.environ[key]\n\n    HOST, PORT = \"\
+          host.docker.internal\", 11434\n    \n    # [2] 物理指纹与表头定义\n    T1_SIG = \"\
+          （一）出差人员乘坐城市间交通工具应不超过以下标准\"\n    T1_HDR = \"| 标准 | 职级/职务标准 | 经费性质 | 火车(含高铁/动车)\
+          \ | 轮船 | 飞机 |\"\n    \n    T2_SIG = \"（二）南京大学国（境）内差旅住宿费限额标准明细表\"\n    T2_HDR\
+          \ = \"| 序号 | 地区(城市) | 一类| 二类| 三类 | 旺季地区 | 旺季期间 | 一类 | 二类 | 三类 |\"\n\n  \
+          \  table_segments = []\n    for item in result:\n        content = item.get('content',\
+          \ '')\n        if T1_SIG in content:\n            table_segments.append(f\"\
+          ### [交通工具标准]\\n{T1_HDR}\\n|---|---|---|---|---|---|\\n{content}\")\n   \
+          \     elif T2_SIG in content:\n            table_segments.append(f\"###\
+          \ [住宿限额标准]\\n{T2_HDR}\\n|---|---|---|---|---|---|---|---|---|---|\\n{content}\"\
+          )\n\n    # 物理熔断\n    if not table_segments:\n        return {\"table_audit_info\"\
+          : \"未探测到物理表格指纹。\", \"has_table\": \"false\", \"is_complete\": \"false\"\
+          , \"total_tokens\": \"0\"}\n\n    # [3] 构造具有“生产辅助”和“逻辑拦截”能力的 Prompt\n  \
+          \  system_content = \"\"\"# Role\n南京大学财务矩阵审计员。你的核心任务是执行“行锁定”审计。\n\n# Audit\
+          \ Logic (强制执行):\n1. **要素核对**: 检查 [职级]、[目的地] 是否明确。\n2. **逻辑拦截 (重要)**: \n\
+          \   - **信息完备**: 如果职级明确，锁定具体数值。\n   - **信息缺失**: 如果未提供职级，禁止默认一类。如果提供了月份，则需要核对是否是旺季，如果没有提供，禁止默认旺季。必须锁定对应地区的【整行数据】并返回，要求用户对照。\n\
+          3. **输出格式**: 必须输出 Strict JSON。\n\n# Few-shot Examples:\n- **场景 A (信息足)**:\n\
+          \  * 用户: \"正高，去北京\"\n  * JSON: {\"is_complete\": true, \"audit_conclusion\"\
+          : \"北京住宿限额1100元/天。\", \"locked_row\": \"| 1 | 北京 | 1100 | 900 | 600 |...\"\
+          , \"mapping_logic\": \"职级匹配一类，锁定北京行。\"}\n\n- **场景 B (缺失职级 - 返回整行)**:\n \
+          \ * 用户: \"北京住宿标准是多少？\"\n  * JSON: {\"is_complete\": false, \"audit_conclusion\"\
+          : \"缺失职级要素。请根据职级核对北京标准：\", \"locked_row\": \"| 1 | 北京 | 一类:1100 | 二类:900\
+          \ | 三类:600 |\", \"mapping_logic\": \"信息不完备，执行整行回溯逻辑。\"}\n\n# Output (STRICT\
+          \ JSON):\n{\n  \"is_complete\": boolean,\n  \"audit_conclusion\": \"结论\"\
+          ,\n  \"locked_row\": \"锁定的原始表格行内容\",\n  \"mapping_logic\": \"判定过程\"\n}\"\
+          \"\"\n\n    # [4] 物理请求矩阵\n    payload = {\n        \"model\": \"qwen3.5:9b\"\
+          ,\n        \"messages\": [\n            {\"role\": \"system\", \"content\"\
+          : system_content},\n            {\"role\": \"user\", \"content\": f\"【焊接表格】：\\\
+          n\" + \"\\n\".join(table_segments) + f\"\\n\\n【事实背景】：\\n{refine_query}\"\
+          }\n        ],\n        \"stream\": False,\n        \"think\": False, # 物理关闭深度思考模式\n\
+          \        \"options\": {\n            \"temperature\": 0.1, # 保持审计结果确定性\n\
+          \            \"format\": \"json\"\n        }\n    }\n    \n    try:\n  \
+          \      conn = http.client.HTTPConnection(HOST, PORT, timeout=300)\n    \
+          \    conn.request(\"POST\", \"/api/chat\", json.dumps(payload), {\"Content-Type\"\
+          : \"application/json\"})\n        res = conn.getresponse()\n        raw_data\
+          \ = res.read().decode('utf-8')\n        conn.close()\n\n        # [5] 物理审计：解析全文提取\
+          \ Token 计数\n        full_res = json.loads(raw_data)\n        input_tokens\
+          \ = full_res.get(\"prompt_eval_count\", 0)\n        output_tokens = full_res.get(\"\
+          eval_count\", 0)\n        total_tokens = input_tokens + output_tokens\n\
+          \        \n        # [6] 健壮解析与思维链切除\n        ai_raw = full_res.get(\"message\"\
+          , {}).get(\"content\", \"\").strip()\n        # 物理切除可能的 <think> 标签残留\n \
+          \       clean_json = re.sub(r'<think>.*?</think>', '', ai_raw, flags=re.DOTALL).strip()\n\
+          \        data = json.loads(re.search(r'\\{.*\\}', clean_json, re.DOTALL).group())\n\
+          \n        # [7] 构造可视化输出报告\n        is_complete = data.get(\"is_complete\"\
+          , False)\n        status_icon = \"✅\" if is_complete else \"⚠️\"\n     \
+          \   \n        audit_report = (\n            f\"### {status_icon} 财务矩阵审计快照\\\
+          n\"\n            f\"**结论**：{data.get('audit_conclusion')}\\n\\n\"\n    \
+          \        f\"**物理锁定参考行**：\\n{data.get('locked_row')}\\n\\n\"\n          \
+          \  f\"**审计逻辑**：{data.get('mapping_logic')}\"\n        )\n\n        return\
+          \ {\n            \"table_audit_info\": audit_report,\n            \"has_table\"\
+          : \"true\",\n            \"is_complete\": str(is_complete).lower(),\n  \
+          \          \"input_tokens\": str(input_tokens),\n            \"output_tokens\"\
+          : str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n    except Exception as e:\n        return {\n            \"\
+          table_audit_info\": f\"表格审计算子崩溃：{str(e)}\", \n            \"has_table\"\
+          : \"false\",\n            \"is_complete\": \"false\",\n            \"input_tokens\"\
+          : \"0\", \"output_tokens\": \"0\", \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          has_table:
+            children: null
+            type: boolean
+          input_tokens:
+            children: null
+            type: string
+          is_complete:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          table_audit_info:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 表格读取1
+        type: code
+        variables:
+        - value_selector:
+          - '1774079985510'
+          - result
+          value_type: array[object]
+          variable: result
+        - value_selector:
+          - '1774233037882'
+          - refine_query
+          value_type: string
+          variable: refine_query
+      height: 52
+      id: '1774234048614'
+      position:
+        x: 1054.350781177561
+        y: 201.6273785249445
+      positionAbsolute:
+        x: 1054.350781177561
+        y: 201.6273785249445
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(result:\
+          \ list, refine_query: str):\n    \"\"\"\n    节点 1.2：非结构化规则识别器 (物理脱水版)\n\
+          \    物理任务：剔除纯表格块，深度挖掘文字段落中的高影响审计条文。\n    \"\"\"\n    for key in list(os.environ.keys()):\n\
+          \        if \"proxy\" in key.lower():\n            del os.environ[key]\n\
+          \n    HOST = \"host.docker.internal\" \n    PORT = 11434\n    \n    # 1.\
+          \ 物理拦截：剔除纯矩阵数据，保留文字说明\n    # 定义表格指纹，用于识别并跳过已由 Node 1.1 处理过的内容\n    T1_SIG\
+          \ = \"（一）出差人员乘坐城市间交通工具应不超过以下标准\"\n    T2_SIG = \"（二）南京大学国（境）内差旅住宿费限额标准明细表\"\
+          \n    \n    rule_segments = []\n    for item in result:\n        content\
+          \ = item.get('content', '')\n        # 如果不是纯表格块，或者虽然有标题但带有大量文字说明，则保留\n \
+          \       # 物理判定：若片段长度大于 100 字符且不全是表格符号，则视为规则段落\n        if T1_SIG not in\
+          \ content[:50] and T2_SIG not in content[:50]:\n            rule_segments.append(content)\n\
+          \        elif \"注：\" in content or \"说明：\" in content:\n            # 保留表格下方的特殊说明文字\n\
+          \            rule_segments.append(content)\n\n    if not rule_segments:\n\
+          \        return {\"rule_audit_info\": \"未探测到特殊文字规则。\", \"has_rules\": \"\
+          false\"}\n\n    full_text_context = \"\\n---\\n\".join(rule_segments)[:6000]\n\
+          \n    # 2. 构造提示词：注入逻辑例外示例 (Few-shot)\n    system_content = \"\"\"# Role\n\
+          南京大学财务政策核算员。你的任务是从非表格文字中提取“高影响条文”。\n\n# Audit Priority (规则重要度):\n1. **上浮条款**：如“竞争性科研经费住宿费可上浮\
+          \ 50%”。\n2. **例外豁免**：如“夕发朝至列车不受级别限制”。\n3. **硬性约束**：如“必须使用公务卡”、“原则上不单独报销住宿费”。\n\
+          4. **身份重叠**：如“管理岗兼专业技术岗使用行政经费按管理岗执行”。\n\n# Few-shot Examples:\n\n- 示例 1\
+          \ [上浮规则]:\n  * 段落: \"...使用竞争性科研经费出差，住宿费可按人员类别对应的标准上浮 50%...\"\n  * 提取: 【经费上浮】使用竞争性科研经费，住宿限额允许上浮\
+          \ 50%，但不得超过一类标准。\n\n- 示例 2 [交通例外]:\n  * 段落: \"...对于夕发朝至的全列软席火车，乘坐普通软席时，不受级别限制。\"\
+          \n  * 提取: 【交通豁免】乘坐夕发朝至全列软席，所有人员均可报销软席票。\n\n- 示例 3 [票据约束]:\n  * 段落: \"...城市间交通费票据遗失的，须填写发票遗失说明并履行审批手续...\"\
+          \n  * 提取: 【程序约束】票据遗失需履行专项审批手续，否则不予报销。\n\n# Output (Strict JSON):\n{\n  \"\
+          key_rules\": [\"提取出的规则 1\", \"提取出的规则 2\"],\n  \"impact_analysis\": \"这些规则如何影响当前的报销限额（例如：导致限额变宽或手续变严）\"\
+          \n}\"\"\"\n\n    payload = {\n        \"model\": \"qwen3.5:9b \",\n    \
+          \    \"messages\": [\n            {\"role\": \"system\", \"content\": system_content},\n\
+          \            {\"role\": \"user\", \"content\": f\"【文字规则段落】：\\n{full_text_context}\\\
+          n\\n【用户事实与需求】：\\n{refine_query}\"}\n        ],\n        \"stream\": False,\
+          \ \"think\": False,\n        \"options\": {\"temperature\": 0, \"format\"\
+          : \"json\", \"num_predict\": 1000}\n    }\n    \n    try:\n        conn\
+          \ = http.client.HTTPConnection(HOST, PORT, timeout=300)\n        conn.request(\"\
+          POST\", \"/api/chat\", json.dumps(payload), {\"Content-Type\": \"application/json\"\
+          })\n        res = conn.getresponse()\n        raw_data = res.read().decode('utf-8')\n\
+          \        conn.close()\n        \n        # [物理审计]：解析完整响应体以提取 Token 计数\n\
+          \        full_res = json.loads(raw_data)\n        input_tokens = full_res.get(\"\
+          prompt_eval_count\", 0)\n        output_tokens = full_res.get(\"eval_count\"\
+          , 0)\n        total_tokens = input_tokens + output_tokens\n        \n  \
+          \      ai_raw = full_res.get(\"message\", {}).get(\"content\", \"\").strip()\n\
+          \        # 移除可能存在的思维链残留 [cite: 2026-02-26]\n        clean_json = re.sub(r'<think>.*?</think>',\
+          \ '', ai_raw, flags=re.DOTALL).strip()\n        data = json.loads(re.search(r'\\\
+          {.*\\}', clean_json, re.DOTALL).group())\n\n        rules_str = \"\\n\"\
+          .join([f\"- {r}\" for r in data.get(\"key_rules\", [])])\n        return\
+          \ {\n            \"rule_audit_info\": f\"【特殊规则识别结果】\\n{rules_str}\\n影响评估：{data.get('impact_analysis')}\"\
+          ,\n            \"has_rules\": \"true\",\n            # --- 返回 Token 消耗数据\
+          \ ---\n            \"input_tokens\": str(input_tokens),\n            \"\
+          output_tokens\": str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n    except Exception as e:\n        # 异常链路物理熔断，Token 计数归零\n\
+          \        return {\n            \"rule_audit_info\": f\"规则识别异常：{str(e)}\"\
+          , \n            \"has_rules\": \"false\",\n            \"input_tokens\"\
+          : \"0\",\n            \"output_tokens\": \"0\",\n            \"total_tokens\"\
+          : \"0\"\n        }"
+        code_language: python3
+        outputs:
+          has_rules:
+            children: null
+            type: boolean
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          rule_audit_info:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: '规则识别 '
+        type: code
+        variables:
+        - value_selector:
+          - '1774079985510'
+          - result
+          value_type: array[object]
+          variable: result
+        - value_selector:
+          - '1774233037882'
+          - refine_query
+          value_type: string
+          variable: refine_query
+      height: 52
+      id: '1774234824171'
+      position:
+        x: 1356.350781177561
+        y: 201.6273785249445
+      positionAbsolute:
+        x: 1356.350781177561
+        y: 201.6273785249445
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(table_audit_info:\
+          \ str, rule_audit_info: str, refine_query: str):\n    \"\"\"\n    节点 1.3：综合审计终审官\n\
+          \    排版逻辑：采用“元数据-载荷-执行”三段式解耦，物理规避缩进污染与高亮冲突。\n    \"\"\"\n    # [1] 物理环境初始化\n\
+          \    for k in [k for k in os.environ if \"proxy\" in k.lower()]:\n     \
+          \   del os.environ[k]\n\n    HOST, PORT = \"host.docker.internal\", 11434\n\
+          \n    # [2] 指令模版定义 (使用列表 join 确保物理缩进对齐)\n    system_lines = [\n        \"\
+          # Role: 南京大学财务综合审计官\",\n        \"# Audit Logic:\",\n        \"1. 逻辑对撞：检查【规则】是否对【表格限额】有修正作用。\"\
+          ,\n        \"2. 确定性判定：事实完备则给出确切结论；缺失则进行政策引导。\",\n        \"3. 真实性原则：严禁回答文件中未提及的任何数值。\"\
+          ,\n        \"# Examples:\",\n        \"- [对撞成功]: 教授+北京+科研经费 -> 700限额 * 1.5\
+          \ = 1050元/天。\",\n        \"- [引导补全]: 仅有地名 -> 告知政策框架，引导补充职级。\",\n       \
+          \ \"# Output Style:\",\n        \"- 结构化：【审计结论】+【判定依据】+【特别提醒】。\",\n     \
+          \   \"- 语气：客观、温和、严谨。\"\n    ]\n    SYSTEM_PROMPT = \"\\n\".join(system_lines)\n\
+          \n    # [3] 载荷物理构造 (利用括号实现隐式换行，保持完美的函数缩进)\n    user_payload = (\n      \
+          \  \"### 1. 表格核算硬数据\\n\" + table_audit_info + \"\\n\\n\"\n        \"###\
+          \ 2. 文字例外规则集\\n\" + rule_audit_info + \"\\n\\n\"\n        \"### 3. 当前事实背景\
+          \ (Refine Query)\\n\" + refine_query\n    )\n\n    # [4] 构造 API 请求矩阵\n \
+          \   payload = {\n        \"model\": \"qwen3.5:9b  \",\n        \"messages\"\
+          : [\n            {\"role\": \"system\", \"content\": SYSTEM_PROMPT},\n \
+          \           {\"role\": \"user\", \"content\": user_payload}\n        ],\n\
+          \        \"stream\": False,\n        \"think\": False,\n        \"options\"\
+          : {\n            \"temperature\": 0.2,\n            \"num_predict\": 1000\n\
+          \        }\n    }\n\n    # [5] 物理执行与异常捕获\n    try:\n        conn = http.client.HTTPConnection(HOST,\
+          \ PORT, timeout=300)\n        conn.request(\"POST\", \"/api/chat\", json.dumps(payload),\
+          \ {\"Content-Type\": \"application/json\"})\n        \n        response\
+          \ = conn.getresponse()\n        raw_answer = response.read().decode('utf-8')\n\
+          \        conn.close()\n\n        # [物理审计]：解析完整响应体以提取 Token 计数\n        full_res\
+          \ = json.loads(raw_answer)\n        input_tokens = full_res.get(\"prompt_eval_count\"\
+          , 0)\n        output_tokens = full_res.get(\"eval_count\", 0)\n        total_tokens\
+          \ = input_tokens + output_tokens\n\n        # 提取 Payload 并物理切除思维链内容 [cite:\
+          \ 2026-02-26]\n        full_text = full_res.get(\"message\", {}).get(\"\
+          content\", \"\").strip()\n        final_report = re.sub(r'<think>.*?</think>',\
+          \ '', full_text, flags=re.DOTALL).strip()\n\n        return {\n        \
+          \    \"final_audit_report\": final_report,\n            # --- 返回 Token 消耗数据\
+          \ ---\n            \"input_tokens\": str(input_tokens),\n            \"\
+          output_tokens\": str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n\n    except Exception as audit_error:\n        # 异常链路物理熔断，Token\
+          \ 计数归零\n        return {\n            \"final_audit_report\": f\"【审计内核异常】:\
+          \ {str(audit_error)}\",\n            \"input_tokens\": \"0\",\n        \
+          \    \"output_tokens\": \"0\",\n            \"total_tokens\": \"0\"\n  \
+          \      }"
+        code_language: python3
+        outputs:
+          final_audit_report:
+            children: null
+            type: string
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 审计回答
+        type: code
+        variables:
+        - value_selector:
+          - '1774234824171'
+          - rule_audit_info
+          value_type: string
+          variable: rule_audit_info
+        - value_selector:
+          - '1774234048614'
+          - table_audit_info
+          value_type: string
+          variable: table_audit_info
+        - value_selector:
+          - '1774233037882'
+          - refine_query
+          value_type: string
+          variable: refine_query
+      height: 52
+      id: '1774235019570'
+      position:
+        x: 1658.350781177561
+        y: 201.6273785249445
+      positionAbsolute:
+        x: 1658.350781177561
+        y: 201.6273785249445
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(refine_query:\
+          \ str):\n    \"\"\"\n    节点：信息存储标准化算子 (维度强力提取版)\n    物理修正：\n    1. 强制提取“坐飞机”、“乘高铁”中的核心交通工具词。\n\
+          \    2. 严格执行“脱水”指令，物理切除所有自然语言废话。\n    \"\"\"\n    # [1] 物理环境清理\n    for\
+          \ k in [k for k in os.environ if \"proxy\" in k.lower()]:\n        del os.environ[k]\n\
+          \n    HOST, PORT = \"host.docker.internal\", 11434\n\n    # [2] 强力脱水提示词\
+          \ (物理锚定逻辑)\n    SYSTEM_PROMPT = \"\"\"# Role\n南京大学财务数据标准化算子。\n\n# Task:\
+          \ Standardize & Dehydrate\n1. **维度提取**：从输入中识别 [职级、目的地、交通工具、事由、经费性质]。\n \
+          \  - 特别注意：将“坐飞机”、“乘火车”、“飞往”等动作，物理简化为名词（飞机、火车等）。\n2. **物理脱水**：输出结果**严禁**包含任何用户原始的自然语言句子（如“教授坐飞机...”）。\n\
+          3. **格式对齐**：必须且仅能输出以下格式。\n\n# Output Format Matrix:\n（一）出差人员乘坐城市间交通工具应不超过以下标准\
+          \ | [职级] | [目的地] | [交通工具] | [事由] | [经费性质]\n\n# Few-shot Example (逻辑纠偏):\n\
+          - 输入: \"（一）...标准 正高 北京 待核实 教授坐飞机去北京\"\n- 提取: 职级=正高, 目的地=北京, 交通工具=飞机, 事由=出差\n\
+          - 输出: （一）出差人员乘坐城市间交通工具应不超过以下标准 | 正高 | 北京 | 飞机 | 出差 | 待核实\n\n# Constraints:\n\
+          - 严禁输出 <think>。\n- 严禁保留原始描述性文本。\n- 冲突项设为 \"待核实\"。\" \"\"\"\n\n    payload\
+          \ = {\n        \"model\": \"qwen3.5:9b\",\n        \"messages\": [\n   \
+          \         {\"role\": \"system\", \"content\": SYSTEM_PROMPT},\n        \
+          \    {\"role\": \"user\", \"content\": f\"【待处理事实流】：\\n{refine_query}\"}\n\
+          \        ],\n        \"stream\": False,\n        \"think\": False,\n   \
+          \     \"options\": {\n            \"temperature\": 0,\n            \"format\"\
+          : \"json\", # 强制 JSON 以保证逻辑稳定性\n            \"num_predict\": 1000\n    \
+          \    }\n    }\n\n    try:\n        conn = http.client.HTTPConnection(HOST,\
+          \ PORT, timeout=300)\n        conn.request(\"POST\", \"/api/chat\", json.dumps(payload),\
+          \ {\"Content-Type\": \"application/json\"})\n        res = conn.getresponse()\n\
+          \        raw_data = res.read().decode('utf-8')\n        conn.close()\n\n\
+          \        # [物理审计]：解析完整响应以提取 Token 指标\n        full_res = json.loads(raw_data)\n\
+          \        input_tokens = full_res.get(\"prompt_eval_count\", 0)\n       \
+          \ output_tokens = full_res.get(\"eval_count\", 0)\n        total_tokens\
+          \ = input_tokens + output_tokens\n\n        # [3] 解析并强制提取标准化字符串\n      \
+          \  ai_res = full_res.get(\"message\", {}).get(\"content\", \"\").strip()\n\
+          \        # 物理切除思维链内容\n        clean_text = re.sub(r'<think>.*?</think>',\
+          \ '', ai_res, flags=re.DOTALL).strip()\n        \n        # 提取 JSON 中的 normalized_result\n\
+          \        json_match = re.search(r'\\{.*\\}', clean_text, re.DOTALL)\n  \
+          \      if json_match:\n            data = json.loads(json_match.group())\n\
+          \            # 优先级排序：normalized_result > updated_context\n            result\
+          \ = data.get(\"normalized_result\", data.get(\"updated_context\", \"\"))\n\
+          \            # 兜底：如果字段缺失，依据 facts 字典动态拼装\n            if not result and\
+          \ \"facts\" in data:\n                f = data[\"facts\"]\n            \
+          \    result = f\"（一）出差人员乘坐城市间交通工具应不超过以下标准 | {f.get('职级','待核实')} | {f.get('目的地','待核实')}\
+          \ | {f.get('交通工具','待核实')} | {f.get('事由','待核实')} | {f.get('经费性质','待核实')}\"\
+          \n        else:\n            result = clean_text\n\n        return {\n \
+          \           \"result\": result,\n            # --- 物理注入 Token 统计 ---\n \
+          \           \"input_tokens\": str(input_tokens),\n            \"output_tokens\"\
+          : str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n\n    except Exception as e:\n        # 异常链路物理熔断，Token 计数强制归零以防变量污染\n\
+          \        return {\n            \"result\": f\"标准化算子逻辑坍塌: {str(e)}\",\n \
+          \           \"input_tokens\": \"0\",\n            \"output_tokens\": \"\
+          0\",\n            \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          result:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 存入信息规范化
+        type: code
+        variables:
+        - value_selector:
+          - '1774233037882'
+          - refine_query
+          value_type: string
+          variable: refine_query
+      height: 52
+      id: '1774249116109'
+      position:
+        x: 2131.4630784813353
+        y: 198.38324137803784
+      positionAbsolute:
+        x: 2131.4630784813353
+        y: 198.38324137803784
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(input_data:\
+          \ str):\n    \"\"\"\n    逻辑审计：\n    1. 维度重定义：Slot 3 确定为“交通工具”，排除“变量位”干扰。\n\
+          \    2. 名词保护：修正正则，防止“飞机”被误删字词。\n    3. 标题挂载：由 Python 逻辑在 O(n) 时间内完成硬匹配。\n\
+          \    \"\"\"\n    # [1] 环境清理\n    for k in list(os.environ.keys()):\n   \
+          \     if \"proxy\" in k.lower():\n            del os.environ[k]\n\n    #\
+          \ [2] Python 原生标题检测 (保持指纹持久化)\n    TITLES = [\n        \"（一）出差人员乘坐城市间交通工具应不超过以下标准\"\
+          ,\n        \"（二）南京大学国（境）内差旅住宿费限额标准明细表\"\n    ]\n    detected_titles = [f\"\
+          [{t}]\" for t in TITLES if t in input_data]\n    suffix = \" \".join(detected_titles)\n\
+          \n    # [3] 强约束特征映射指令\n    HOST, PORT = \"host.docker.internal\", 11434\n\
+          \    SYSTEM_PROMPT = \"\"\"# Role\n财务矩阵提取官。只输出 JSON，严禁输出 <think> 标签。\n\n\
+          # Dimensions to Map:\n1. rank: 职级（如：正高、副高、中级、教授、副教授）。\n2. dest: 目的地（如：北京、南京）。\n\
+          3. var: 交通工具（如：飞机、高铁、硬卧）。\n4. reason: 事由（如：出差、调研、会议）。\n5. fund: 经费性质（如：横向、行政事业、纵向）。\n\
+          \n# Mapping Rules:\n- **维度定义修正**: 确认第三维度(var)仅指代“交通工具”，严禁混入其他语义。\n- **名字完整性**:\
+          \ 检查每一个输出变量必须是完整的名词。严禁任何形式的字符截断（如：严禁将“飞机”缩写为“机”）。\n- **职级绝对隔离**: 职级实体只能映射到\
+          \ rank 字段。若同时出现“正高”和“教授”，仅保留“正高”。\n- **动作降维**: 仅保留名词。在提取阶段由模型剔除“坐”、“乘”、“去”等动词前缀。\n\
+          - **空值约定**: 缺失项返回空字符串 \"\"。\n\"\"\"\n\n    payload = {\n        \"model\"\
+          : \"qwen3.5:9b\",\n        \"messages\": [\n            {\"role\": \"system\"\
+          , \"content\": SYSTEM_PROMPT},\n            {\"role\": \"user\", \"content\"\
+          : f\"INPUT_STREAM: {input_data}\"}\n        ],\n        \"stream\": False,\
+          \ \"think\": False,\n        \"options\": {\"temperature\": 0, \"format\"\
+          : \"json\"}\n    }\n\n    try:\n        conn = http.client.HTTPConnection(HOST,\
+          \ PORT, timeout=300)\n        conn.request(\"POST\", \"/api/chat\", json.dumps(payload),\
+          \ {\"Content-Type\": \"application/json\"})\n        res = conn.getresponse()\n\
+          \        raw_data = res.read().decode('utf-8')\n        conn.close()\n\n\
+          \        # [物理审计]：解析完整响应体以提取 Token 计数\n        full_res = json.loads(raw_data)\n\
+          \        input_tokens = full_res.get(\"prompt_eval_count\", 0)\n       \
+          \ output_tokens = full_res.get(\"eval_count\", 0)\n        total_tokens\
+          \ = input_tokens + output_tokens\n\n        # [4] 解析与清洗\n        ai_res\
+          \ = full_res.get(\"message\", {}).get(\"content\", \"\").strip()\n     \
+          \   # 物理切除思维链内容 [cite: 2026-02-26]\n        clean_json = re.sub(r'<think>.*?</think>',\
+          \ '', ai_res, flags=re.DOTALL).strip()\n        data = json.loads(re.search(r'\\\
+          {.*\\}', clean_json, re.DOTALL).group())\n\n        # [5] 物理脱水函数：修正动词剔除逻辑，保护专有名词\n\
+          \        def dehydrate(v):\n            if not v or v in [\"待核实\", \"未知\"\
+          , \"None\"]: return \"\"\n            v_str = str(v).strip()\n         \
+          \   # 仅移除字符串开头的动词性前缀\n            v_str = re.sub(r'^[坐乘去往到]', '', v_str)\n\
+          \            return v_str\n\n        # [6] 按照位点对齐组装向量\n        parts = [\n\
+          \            dehydrate(data.get(\"rank\", \"\")),\n            dehydrate(data.get(\"\
+          dest\", \"\")),\n            dehydrate(data.get(\"var\", \"\")),\n     \
+          \       dehydrate(data.get(\"reason\", \"\")),\n            dehydrate(data.get(\"\
+          fund\", \"\"))\n        ]\n        \n        # 构造最终表格字符串\n        final_table\
+          \ = f\"| {' | '.join(parts)} | {suffix}\".strip()\n        final_table =\
+          \ re.sub(r'\\s\\|\\s$', '', final_table)\n\n        return {\n         \
+          \   \"result_table\": final_table,\n            # --- 返回 Token 消耗数据 ---\n\
+          \            \"input_tokens\": str(input_tokens),\n            \"output_tokens\"\
+          : str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n\n    except Exception as e:\n        # 异常链路物理熔断，Token 计数归零\n\
+          \        return {\n            \"result_table\": f\"CRITICAL_FAILURE: {str(e)}\"\
+          ,\n            \"input_tokens\": \"0\",\n            \"output_tokens\":\
+          \ \"0\",\n            \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          result_table:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 原信息提取
+        type: code
+        variables:
+        - value_selector:
+          - conversation
+          - query_history
+          value_type: string
+          variable: input_data
+      height: 52
+      id: '1774252429547'
+      position:
+        x: 782.2501761419383
+        y: 335.9595039921491
+      positionAbsolute:
+        x: 782.2501761419383
+        y: 335.9595039921491
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(input_data:\
+          \ str):\n    \"\"\"\n    逻辑审计：\n    1. 维度重定义：Slot 3 确定为“交通工具”，排除“变量位”干扰。\n\
+          \    2. 名词保护：修正正则，防止“飞机”被误删字词。\n    3. 标题挂载：由 Python 逻辑在 O(n) 时间内完成硬匹配。\n\
+          \    \"\"\"\n    # [1] 环境清理\n    for k in list(os.environ.keys()):\n   \
+          \     if \"proxy\" in k.lower():\n            del os.environ[k]\n\n    #\
+          \ [2] Python 原生标题检测 (保持指纹持久化)\n    TITLES = [\n        \"（一）出差人员乘坐城市间交通工具应不超过以下标准\"\
+          ,\n        \"（二）南京大学国（境）内差旅住宿费限额标准明细表\"\n    ]\n    detected_titles = [f\"\
+          [{t}]\" for t in TITLES if t in input_data]\n    suffix = \" \".join(detected_titles)\n\
+          \n    # [3] 强约束特征映射指令\n    HOST, PORT = \"host.docker.internal\", 11434\n\
+          \    SYSTEM_PROMPT = \"\"\"# Role\n财务矩阵提取官。只输出 JSON，严禁输出 <think> 标签。\n\n\
+          # Dimensions to Map:\n1. rank: 职级（如：正高、副高、中级、教授、副教授）。\n2. dest: 目的地（如：北京、南京）。\n\
+          3. var: 交通工具（如：飞机、高铁、硬卧）。\n4. reason: 事由（如：出差、调研、会议）。\n5. fund: 经费性质（如：横向、行政事业、纵向）。\n\
+          \n# Mapping Rules:\n- **维度定义修正**: 确认第三维度(var)仅指代“交通工具”，严禁混入其他语义。\n- **名字完整性**:\
+          \ 检查每一个输出变量必须是完整的名词。严禁任何形式的字符截断（如：严禁将“飞机”缩写为“机”）。\n- **职级绝对隔离**: 职级实体只能映射到\
+          \ rank 字段。若同时出现“正高”和“教授”，仅保留“正高”。\n- **动作降维**: 仅保留名词。在提取阶段由模型剔除“坐”、“乘”、“去”等动词前缀。\n\
+          - **空值约定**: 缺失项返回空字符串 \"\"。\n\"\"\"\n\n    payload = {\n        \"model\"\
+          : \"qwen3.5:9b\",\n        \"messages\": [\n            {\"role\": \"system\"\
+          , \"content\": SYSTEM_PROMPT},\n            {\"role\": \"user\", \"content\"\
+          : f\"INPUT_STREAM: {input_data}\"}\n        ],\n        \"stream\": False,\
+          \ \"think\": False,\n        \"options\": {\"temperature\": 0, \"format\"\
+          : \"json\"}\n    }\n\n    try:\n        conn = http.client.HTTPConnection(HOST,\
+          \ PORT, timeout=300)\n        conn.request(\"POST\", \"/api/chat\", json.dumps(payload),\
+          \ {\"Content-Type\": \"application/json\"})\n        res = conn.getresponse()\n\
+          \        raw_data = res.read().decode('utf-8')\n        conn.close()\n\n\
+          \        # [物理审计]：解析完整响应以提取 Token 指标\n        full_res = json.loads(raw_data)\n\
+          \        input_tokens = full_res.get(\"prompt_eval_count\", 0)\n       \
+          \ output_tokens = full_res.get(\"eval_count\", 0)\n        total_tokens\
+          \ = input_tokens + output_tokens\n\n        # [4] 解析与清洗\n        ai_res\
+          \ = full_res.get(\"message\", {}).get(\"content\", \"\").strip()\n     \
+          \   # 物理切除思维链内容，确保 JSON 纯净\n        clean_json = re.sub(r'<think>.*?</think>',\
+          \ '', ai_res, flags=re.DOTALL).strip()\n        data = json.loads(re.search(r'\\\
+          {.*\\}', clean_json, re.DOTALL).group())\n\n        # [5] 物理脱水函数：修正动词剔除逻辑，保护专有名词\n\
+          \        def dehydrate(v):\n            if not v or v in [\"待核实\", \"未知\"\
+          , \"None\"]: return \"\"\n            v_str = str(v).strip()\n         \
+          \   # 仅移除字符串开头的动词性前缀\n            v_str = re.sub(r'^[坐乘去往到]', '', v_str)\n\
+          \            return v_str\n\n        # [6] 按照位点对齐组装向量\n        parts = [\n\
+          \            dehydrate(data.get(\"rank\", \"\")),\n            dehydrate(data.get(\"\
+          dest\", \"\")),\n            dehydrate(data.get(\"var\", \"\")),\n     \
+          \       dehydrate(data.get(\"reason\", \"\")),\n            dehydrate(data.get(\"\
+          fund\", \"\"))\n        ]\n        \n        # 构造最终表格字符串\n        final_table\
+          \ = f\"| {' | '.join(parts)} | {suffix}\".strip()\n        final_table =\
+          \ re.sub(r'\\s\\|\\s$', '', final_table)\n\n        return {\n         \
+          \   \"result_table\": final_table,\n            # --- 物理注入 Token 统计 ---\n\
+          \            \"input_tokens\": str(input_tokens),\n            \"output_tokens\"\
+          : str(output_tokens),\n            \"total_tokens\": str(total_tokens)\n\
+          \        }\n\n    except Exception as e:\n        # 异常链路物理熔断，Token 计数归零以防下游变量错误\n\
+          \        return {\n            \"result_table\": f\"CRITICAL_FAILURE: {str(e)}\"\
+          ,\n            \"input_tokens\": \"0\",\n            \"output_tokens\":\
+          \ \"0\",\n            \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          result_table:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 新信息提取
+        type: code
+        variables:
+        - value_selector:
+          - sys
+          - query
+          value_type: string
+          variable: input_data
+      height: 52
+      id: '1774253025960'
+      position:
+        x: 1085.5357543069267
+        y: 335.9595039921491
+      positionAbsolute:
+        x: 1085.5357543069267
+        y: 335.9595039921491
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(old_table:\
+          \ str, new_table: str):\n    \"\"\"\n    逻辑审计（物理锁死版）：\n    1. 冲突判定：New 非空\
+          \ 且 New != Old -> 物理清空 \"\"。\n    2. 维持判定：New 为空 -> 100% 物理保留 Old 值。\n \
+          \   3. 增量判定：Old 为空 且 New 非空 -> 填入 New。\n    4. 维度对齐：[1.职级 | 2.目的地 | 3.交通工具\
+          \ | 4.事由 | 5.经费性质]\n    \"\"\"\n    # [1] 物理环境清理\n    for k in list(os.environ.keys()):\n\
+          \        if \"proxy\" in k.lower():\n            del os.environ[k]\n\n \
+          \   HOST, PORT = \"host.docker.internal\", 11434\n\n    # [2] 强约束对撞指令 (包含核心逻辑示例)\n\
+          \    SYSTEM_PROMPT = \"\"\"# Role\n财务矩阵对撞专家。只输出 JSON，严禁输出 <think>。\n\n#\
+          \ Dimensions (5 Slots):\n1.rank | 2.dest | 3.trans | 4.reason | 5.fund\n\
+          \n# Logic Matrix (严格执行):\n| 场景 | Old位点 | New位点 | 最终输出 | 审计分类 |\n| :--- |\
+          \ :--- | :--- | :--- | :--- |\n| **维持** | 有值 | 为空(\"\") | **保留Old值** | 无\
+          \ |\n| **补全** | 为空(\"\") | 有值 | **采用New值** | added |\n| **冲突** | 有值 | 不同新值\
+          \ | **清空(\"\")** | conflicted |\n| **一致** | 有值 | 相同新值 | **保留原值** | 无 |\n\
+          \n# Important constraint:\n- 如果 New table 里的位点是空的（即只有空格或\"\"），**严禁**将其视为冲突，必须保留\
+          \ Old table 里的原件。\n- 只有当 New 提供了**具体的不同词汇**（如：火车 vs 飞机）时，才清空该维度。\n\n# Few-shot\
+          \ Example:\n- **Old**: \"| 正高 | 北京 | 飞机 | 出差 | 行政事业 |\"\n- **New**: \"|\
+          \ | | 火车 | | |\"\n- **Internal Logic**: \n  Slot 1,2,4,5 in New are EMPTY\
+          \ -> Maintain Old values.\n  Slot 3 (trans) is \"火车\" vs \"飞机\" -> Conflict\
+          \ -> Set to \"\".\n- **Final Vector**: [\"正高\", \"北京\", \"\", \"出差\", \"\
+          行政事业\"]\n- **Conflicted**: [\"交通工具\"]\n\n# Output JSON Structure:\n{\n \
+          \ \"vector\": [\"值1\", \"值2\", \"值3\", \"值4\", \"值5\"],\n  \"added\": [\"\
+          维度名\"],\n  \"conflicted\": [\"维度名\"]\n}\"\"\"\n\n    payload = {\n     \
+          \   \"model\": \"qwen3.5:9b\",\n        \"messages\": [\n            {\"\
+          role\": \"system\", \"content\": SYSTEM_PROMPT},\n            {\"role\"\
+          : \"user\", \"content\": f\"【Old Matrix】: {old_table}\\n【New Matrix】: {new_table}\"\
+          }\n        ],\n        \"stream\": False, \"think\": False,\n        \"\
+          options\": {\"temperature\": 0, \"format\": \"json\"}\n    }\n\n    try:\n\
+          \        conn = http.client.HTTPConnection(HOST, PORT, timeout=300)\n  \
+          \      conn.request(\"POST\", \"/api/chat\", json.dumps(payload), {\"Content-Type\"\
+          : \"application/json\"})\n        res = conn.getresponse()\n        raw_data\
+          \ = res.read().decode('utf-8')\n        conn.close()\n\n        # [物理审计]：提取原始响应以获取\
+          \ Token 计数\n        full_res = json.loads(raw_data)\n        input_tokens\
+          \ = full_res.get(\"prompt_eval_count\", 0)\n        output_tokens = full_res.get(\"\
+          eval_count\", 0)\n        total_tokens = input_tokens + output_tokens\n\n\
+          \        # [3] 解析与物理对齐\n        ai_res = full_res.get(\"message\", {}).get(\"\
+          content\", \"\").strip()\n        # 物理切除思维链内容，确保 JSON 纯度\n        clean_json\
+          \ = re.sub(r'<think>.*?</think>', '', ai_res, flags=re.DOTALL).strip()\n\
+          \        data = json.loads(re.search(r'\\{.*\\}', clean_json, re.DOTALL).group())\n\
+          \n        # 维度清洗（去除残留维度名）\n        raw_vec = data.get(\"vector\", [\"\"\
+          , \"\", \"\", \"\", \"\"])\n        # 补充位点\n        while len(raw_vec) <\
+          \ 5: raw_vec.append(\"\")\n        \n        # [4] 标题持久化（Python 强制扫描）\n\
+          \        TITLES = [\"（一）出差人员乘坐城市间交通工具应不超过以下标准\", \"（二）南京大学国（境）内差旅住宿费限额标准明细表\"\
+          ]\n        detected = [f\"[{t}]\" for t in TITLES if t in old_table or t\
+          \ in new_table]\n        suffix = \" \".join(detected)\n\n        # [5]\
+          \ 最终输出构造\n        final_vec = [str(v).strip() for v in raw_vec[:5]]\n  \
+          \      final_table = f\"| {' | '.join(final_vec)} | {suffix}\".strip()\n\
+          \        final_table = re.sub(r'\\s\\|\\s$', '', final_table)\n\n      \
+          \  # 构造审计报告\n        added = data.get(\"added\", [])\n        conflicted\
+          \ = data.get(\"conflicted\", [])\n        report = []\n        if conflicted:\
+          \ report.append(f\"❗ **冲突清空**: [{', '.join(conflicted)}] 维度信息矛盾，已执行物理归零。\"\
+          )\n        if added: report.append(f\"✅ **新信息加入**: [{', '.join(added)}]\
+          \ 维度已并入矩阵。\")\n\n        return {\n            \"final_table\": final_table,\n\
+          \            \"audit_report\": \" | \".join(report) if report else \"【状态】信息已融合，矩阵收敛。\"\
+          ,\n            # --- 物理注入 Token 统计 ---\n            \"input_tokens\": str(input_tokens),\n\
+          \            \"output_tokens\": str(output_tokens),\n            \"total_tokens\"\
+          : str(total_tokens)\n        }\n\n    except Exception as e:\n        #\
+          \ 异常链路物理熔断，Token 计数强制归零以防下游变量错误\n        return {\n            \"final_table\"\
+          : old_table, \n            \"audit_report\": f\"对撞逻辑故障: {str(e)}\",\n  \
+          \          \"input_tokens\": \"0\",\n            \"output_tokens\": \"0\"\
+          ,\n            \"total_tokens\": \"0\"\n        }"
+        code_language: python3
+        outputs:
+          audit_report:
+            children: null
+            type: string
+          final_table:
+            children: null
+            type: string
+          input_tokens:
+            children: null
+            type: string
+          output_tokens:
+            children: null
+            type: string
+          total_tokens:
+            children: null
+            type: string
+        selected: false
+        title: 冲突检测与补充
+        type: code
+        variables:
+        - value_selector:
+          - '1774253025960'
+          - result_table
+          value_type: string
+          variable: new_table
+        - value_selector:
+          - '1774252429547'
+          - result_table
+          value_type: string
+          variable: old_table
+      height: 52
+      id: '1774253862435'
+      position:
+        x: 1387.5357543069267
+        y: 335.9595039921491
+      positionAbsolute:
+        x: 1387.5357543069267
+        y: 335.9595039921491
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        code: "import http.client\nimport json\nimport os\nimport re\n\ndef main(final_table:\
+          \ str, audit_report: str):\n    \"\"\"\n    逻辑说明：\n    1. 接收融合后的表格与审计报告。\n\
+          \    2. 调用 LLM 将结构化信息转化为温和的自然语言回复。\n    3. 严格遵循输入事实，不捏造任何表格外的信息。\n    \"\
+          \"\"\n    # [1] 环境清理\n    for k in list(os.environ.keys()):\n        if\
+          \ \"proxy\" in k.lower():\n            del os.environ[k]\n\n    HOST, PORT\
+          \ = \"host.docker.internal\", 11434\n\n    # [2] 专为“回复生成”设计的提示词\n    # 强调专业、温和，以及对“冲突”和“缺失”的差异化引导\n\
+          \    SYSTEM_PROMPT = \"\"\"# Role\n南京大学财务智能助手。你的语气应专业、温和且高效。禁止输出 <think>\
+          \ 标签。\n\n# Input Context:\n1. **Audit Report**: 记录了系统刚刚执行的操作（如：冲突抹除、信息新增）。\n\
+          2. **Final Table**: 当前系统掌握的最新事实矩阵。位点顺序为：| 职级 | 目的地 | 交通工具 | 事由 | 经费性质 [标准名称]。\n\
+          \n# Task:\n根据输入编写一段回复。回复必须包含以下三个板块：\n1. **变更同步**：简述系统刚才进行了哪些更新（基于 Audit\
+          \ Report）。\n2. **当前事实状态**：展示当前已确认的信息（基于 Final Table）。\n3. **后续引导**：\n  \
+          \ - 如果某维度因“冲突”被抹除（Audit Report 中提到冲突），请温和地请用户重新提供该维度的**唯一真实**信息。\n   - 如果某维度依然为空（Final\
+          \ Table 中对应位点为空），请提示用户可以补充该信息以完善核算。\n\n# Constraint:\n- 严禁回答输入数据之外的任何财务政策。\n\
+          - 严禁出现“根据我的训练数据”等废话。\n- 语气要像一位耐心的财务老师。\n\"\"\"\n\n    user_payload = f\"\
+          【审计报告】: {audit_report}\\n【当前信息矩阵】: {final_table}\"\n\n    payload = {\n\
+          \        \"model\": \"qwen3.5:9b\",\n        \"messages\": [\n         \
+          \   {\"role\": \"system\", \"content\": SYSTEM_PROMPT},\n            {\"\
+          role\": \"user\", \"content\": user_payload}\n        ],\n        \"stream\"\
+          : False,\n        \"think\": False,\n        \"options\": {\"temperature\"\
+          : 0.3} # 略微提高温度，使语气更自然\n    }\n\n    try:\n        conn = http.client.HTTPConnection(HOST,\
+          \ PORT, timeout=300)\n        conn.request(\"POST\", \"/api/chat\", json.dumps(payload),\
+          \ {\"Content-Type\": \"application/json\"})\n        res = conn.getresponse()\n\
+          \        raw_data = res.read().decode('utf-8')\n        conn.close()\n\n\
+          \        # [3] 解析回复内容\n        ai_res = json.loads(raw_data).get(\"message\"\
+          , {}).get(\"content\", \"\").strip()\n        # 兜底物理清理\n        final_answer\
+          \ = re.sub(r'<think>.*?</think>', '', ai_res, flags=re.DOTALL).strip()\n\
+          \n        return {\n            \"result\": final_answer\n        }\n\n\
+          \    except Exception as e:\n        return {\n            \"result\": f\"\
+          抱歉，系统在处理您的财务信息时遇到了微小的通讯波动。当前信息状态如下：\\n{final_table}\\n\\n错误明细: {str(e)}\"\
+          \n        }"
+        code_language: python3
+        outputs:
+          result:
+            children: null
+            type: string
+        selected: false
+        title: 回答块
+        type: code
+        variables:
+        - value_selector:
+          - '1774253862435'
+          - final_table
+          value_type: string
+          variable: final_table
+        - value_selector:
+          - '1774253862435'
+          - audit_report
+          value_type: string
+          variable: audit_report
+      height: 52
+      id: '1774254548089'
+      position:
+        x: 1689.5357543069267
+        y: 335.9595039921491
+      positionAbsolute:
+        x: 1689.5357543069267
+        y: 335.9595039921491
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    viewport:
+      x: -239.1662443713558
+      y: 507.2275738501788
+      zoom: 0.5557202622666922
+  rag_pipeline_variables: []

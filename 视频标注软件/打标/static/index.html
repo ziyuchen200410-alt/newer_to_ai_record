@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>绝对路径视频打标</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Absolute Path Labeling</p>
+          <h1>视频双视图打标台</h1>
+        </div>
+        <div class="path-box">
+          <label for="datasetPathInput">JSON 绝对路径</label>
+          <div class="path-row">
+            <input
+              id="datasetPathInput"
+              type="text"
+              placeholder="D:\\data\\sub_sampled_abs.json"
+              spellcheck="false"
+            />
+            <button id="loadBtn" type="button">加载</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="viewer">
+          <div class="viewer-head">
+            <div id="sampleCounter" class="meta">样本 0 / 0</div>
+            <div class="actions">
+              <button id="goodBtn" class="tag good">G / Good</button>
+              <button id="badBtn" class="tag bad">B / Bad</button>
+            </div>
+          </div>
+          <div id="goodSizeRow" class="good-size-row hidden">
+            <span class="good-size-title">Good 分类</span>
+            <button id="largeBtn" type="button" class="size-btn">大物体 (L)</button>
+            <button id="smallBtn" type="button" class="size-btn">小物体 (S)</button>
+          </div>
+          <div id="status" class="status">请输入 JSON 路径并加载</div>
+
+          <div class="speed-bar">
+            <span>倍速</span>
+            <button class="speed active" data-speed="0.5">0.5x</button>
+            <button class="speed" data-speed="1">1x</button>
+            <button class="speed" data-speed="2">2x</button>
+            <button class="speed" data-speed="3">3x</button>
+          </div>
+
+          <div class="videos">
+            <div class="video-cell">
+              <div class="video-label">Ref</div>
+              <div id="refPath" class="video-path" title="">-</div>
+              <video id="refVideo" playsinline preload="auto" muted></video>
+            </div>
+            <div class="video-cell">
+              <div class="video-label">Src</div>
+              <div id="srcPath" class="video-path" title="">-</div>
+              <video id="srcVideo" playsinline preload="auto" muted></video>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <span id="playbackState">暂停</span>
+            <span id="timeInfo">0.00s / 0.00s</span>
+            <span id="syncInfo">对齐偏差 0 ms</span>
+          </div>
+        </section>
+
+        <aside class="side">
+          <div class="side-head">
+            <h2>四条指令</h2>
+            <div id="tagBadge" class="badge pending">未标注</div>
+          </div>
+          <ol id="instructionList" class="instructions"></ol>
+
+          <div class="mask-box">
+            <div class="side-head">
+              <h2 style="font-size: 14px; color: var(--muted);">对应差异图 (Diff)</h2>
+            </div>
+            <img id="maskImage" class="mask-img hidden" src="" alt="掩码图" />
+            <div id="maskFallback" class="keys" style="text-align: center; padding: 20px;">
+              未找到同名掩码图
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <script src="app.js?v=20260409_object_size_v1" type="module"></script>
+  </body>
+</html>
