@@ -6,8 +6,8 @@
 
 | 变量 | 提示词类型 (System Prompt) | 对应路径关键字 |
 | :--- | :--- | :--- |
-| **P-Default** | `You are Qwen...` | `正确率.py` / `eval.py` |
-| **P-Academic** | `医学考试系统：执行判别任务...` | `修改提示词/eval.py` |
+| **P-Default** | 通用助手模式 | `You are Qwen, created by Alibaba Cloud. You are a helpful assistant.` |
+| **P-Academic** | 学术判别模式 | `医学考试系统：执行判别任务。仅输出选项字母（单选/多选）。禁止生成冗余文字。` |
 
 ---
 
