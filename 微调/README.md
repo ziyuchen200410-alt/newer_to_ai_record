@@ -147,7 +147,9 @@
 | :--- | :--- | :--- |
 | **P-Default** | 通用助手模式 | `You are Qwen, created by Alibaba Cloud. You are a helpful assistant.` |
 | **P-Academic** | 学术判别模式 | `医学考试系统：执行判别任务。仅输出选项字母（单选/多选）。禁止生成冗余文字。` |
-得到下面的测试结果
+
+然后得到下面的测试结果
+
 | 模型版本 | 提示词策略 | 总正确率 (Total) | 单选题 (Single) | 多选题 (Multi) | 语义找回 (Semantic) | 耗时 (Runtime) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Base (原始基座)** | P-Default | 59.5982% | 63.52% | 26.97% | 522 | 1392.32s |
