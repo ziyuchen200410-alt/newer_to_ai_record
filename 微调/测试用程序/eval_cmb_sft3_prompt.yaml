@@ -1,0 +1,30 @@
+### 1. 模型路径审计 (锁定 SFT2 融合权重)
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/medical_qwen_sft3_merged
+trust_remote_code: true
+
+### 2. 核心模式执行动作
+stage: sft 
+do_train: false          
+do_predict: true         
+predict_with_generate: true
+
+### 3. 数据集与模板配置
+eval_dataset: cmb_eval
+template: medical_qwen
+cutoff_len: 1024          
+max_samples: 11200
+
+### 5. 生成策略审计 (确定性输出逻辑)
+do_sample: false
+temperature: 0
+top_p: 1.0
+max_new_tokens: 15        
+
+### 6. 计算资源压榨 (4090 优化)
+per_device_eval_batch_size: 16
+preprocessing_num_workers: 16
+
+### 7. 输出结果审计
+output_dir: saves/medical_qwen/eval_results_sft2_prompt_C
+overwrite_output_dir: true
+

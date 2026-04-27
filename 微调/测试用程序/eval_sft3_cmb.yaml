@@ -1,0 +1,26 @@
+### 1. 模型与阶段审计
+model_name_or_path: /data1/student/czy/LLaMA-Factory/models/medical_qwen_sft3_merged
+stage: sft
+do_train: false            # 确认关闭训练
+do_predict: true           # 开启预测逻辑
+finetuning_type: full
+
+### 2. 数据集配置 (关键修正)
+eval_dataset: cmb_eval  # 必须显式提供，以满足解析器的校验逻辑
+template: qwen
+cutoff_len: 1024
+
+### 3. 安全与隔离
+report_to: none            # 彻底断开外部日志连接
+export_device: cuda        # 确保推理在显卡上进行
+
+### 4. 推理参数 (严谨去随机化)
+per_device_eval_batch_size: 4
+predict_with_generate: true
+max_new_tokens: 64         
+do_sample: false           # 锁定逻辑，禁止随机幻觉
+top_p: 1.0
+
+### 5. 输出路径
+output_dir: /data1/student/czy/LLaMA-Factory/saves/medical_qwen/eval_sft3_mcq_safe
+overwrite_output_dir: true
